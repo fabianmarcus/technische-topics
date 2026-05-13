@@ -9,6 +9,7 @@ Topics, articles and videos to study
 - [x] LLM Instruction Files
 - [x] Agent Coding ([Copilot CLI](https://github.com/features/copilot/cli), Claude Code)
 - [ ] KI - Product Overview
+- [ ] [Design.md](https://stitch.withgoogle.com/docs/design-md/overview)
 
 ### Try
 
