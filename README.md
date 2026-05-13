@@ -13,6 +13,7 @@ Topics, articles and videos to study
 
 ### Try
 
+- [ ] [n8n](https://www.kapio.eu/tools/n8n)
 - [ ] Codex or Claude Code or Gemini CLI (Vibe Coding)
 - [ ] Onyx (RAG)
 - [ ] Self Hosted LLM (Ollama)
