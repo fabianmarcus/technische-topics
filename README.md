@@ -10,9 +10,12 @@ Topics, articles and videos to study
 - [x] Agent Coding ([Copilot CLI](https://github.com/features/copilot/cli), Claude Code)
 - [ ] KI - Product Overview
 - [ ] [Design.md](https://stitch.withgoogle.com/docs/design-md/overview)
+- [ ] Spec Driven Dev mit OpenSpec
+- [ ] TDD mit Copilot
 
 ### Try
 
+- [ ] ADRs - Skill und in die Instructions
 - [ ] [n8n](https://www.kapio.eu/tools/n8n)
 - [ ] Codex or Claude Code or Gemini CLI (Vibe Coding)
 - [ ] Onyx (RAG)
@@ -47,8 +50,6 @@ Topics, articles and videos to study
 
 ### Study
 
-### Study
-
 ### Try
 
 - [ ] Data Connect
@@ -68,4 +69,3 @@ Topics, articles and videos to study
 ## Reading & Watching List
 
 - [ ] https://blog.openreplay.com/api-gateway-patterns-and-practices/?ref=dailydev
-- [ ] 
