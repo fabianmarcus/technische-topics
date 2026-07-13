@@ -2,7 +2,7 @@
 
 Topics, Artikel und Videos zum lernen, einarbeiten und ausprobieren.
 
-Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](what-is/README.md)** zusammengefasst festgehalten.
+Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](was-ist/README.md)** zusammengefasst festgehalten.
 
 ## Themen
 
