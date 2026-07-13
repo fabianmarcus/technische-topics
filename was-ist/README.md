@@ -18,5 +18,6 @@ Für den Anfang sind ein paar allgemeinere Themen hinzugefügt. Mit der Zeit sol
 | [dev-ops](dev-ops/) | CI/CD und Docker im DevOps-Kontext. |
 | [frontend](frontend/) | Angular, React, Bundling und Extensions. |
 | [künstliche-intelligenz](k%C3%BCnstliche-intelligenz/) | KI-Themen mit Fokus auf MCP. |
+| [project-management](project-management/) | Scrum, Prozesse und grundlegende Agile-Notizen. |
 
 Falls etwas nicht stimmt, lass mir gerne ein Issue da.
