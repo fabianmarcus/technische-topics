@@ -1,15 +1,15 @@
-# Information Sources
+# Informationsquellen
 
-## Web Development in general
+## Webentwicklung im Allgemeinen
 
 - [Eraser Decision Node](https://www.eraser.io/decision-node)
 
 ## TypeScript
 
 - Youtube
-- JS Newsletter
-- [Javascript Survey](https://2022.stateofjs.com/en-US/libraries/) - Wie was in JS verbreitet ist und was genutzt wird
-- [Javascript Rising Stars](https://risingstars.js.org/2022/en#section-statemanagement) - Was gerade modern ist in JS
+- JS-Newsletter
+- [Javascript Survey](https://2022.stateofjs.com/en-US/libraries/) - Große Umfrage unter JS-Entwicklern zu Libraries und Frameworks.
+- [Javascript Rising Stars](https://risingstars.js.org/2022/en#section-statemanagement) - Was gerade modern wird in JS.
 
 ## Node.js
 
