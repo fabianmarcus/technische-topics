@@ -2,9 +2,13 @@
 
 Topics, Artikel und Videos zum lernen, einarbeiten und ausprobieren.
 
-## Künstliche Intelligenz
+Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](what-is/README.md)** zusammengefasst festgehalten.
 
-### Theorie
+## Themen
+
+### Künstliche Intelligenz
+
+#### Theorie
 
 - [ ] [MCP](https://modelcontextprotocol.io/docs/getting-started/intro)
 - [x] LLM Instruction Files
@@ -14,7 +18,7 @@ Topics, Artikel und Videos zum lernen, einarbeiten und ausprobieren.
 - [ ] Spec Driven Dev mit OpenSpec
 - [ ] TDD mit Copilot
 
-### Ausprobieren
+#### Ausprobieren
 
 - [ ] ADRs - Skill und in die Instructions
 - [ ] [n8n](https://www.kapio.eu/tools/n8n)
@@ -22,41 +26,41 @@ Topics, Artikel und Videos zum lernen, einarbeiten und ausprobieren.
 - [ ] Onyx (RAG)
 - [ ] Self Hosted LLM (Ollama)
 
-## React / Next.js
+### React / Next.js
 
-### Theorie
+#### Theorie
 
 - [x] [Rspack](https://rspack.rs/)
 - [ ] [Oxidation Compiler](https://oxc.rs/)
 
-### Ausprobieren
+#### Ausprobieren
 
 - [ ] [SWR](https://swr.vercel.app/docs/mutation)
 - [ ] [Playwright Agent Testing](https://playwright.dev/docs/test-agents)
 
-## Angular
+### Angular
 
-### Theorie
+#### Theorie
 
-### Ausprobieren
+#### Ausprobieren
 
-## Typescript
+### Typescript
 
 - [ ] https://angularexperts.io/blog/advanced-typescript?ref=dailydev  (keyof, typeof, infer, mapped, etc.)
 - [ ] https://netninja.dev/p/typescript-masterclass
 - [ ] https://www.youtube.com/watch?v=6M9aZzm-kEc&list=TLPQMjcxMTIwMjPtDINszOh9aA&index=4
 - [ ] https://devblogs.microsoft.com/typescript/announcing-typescript-5-4-beta/#preserved-narrowing-in-closures-following-last-assignments
 
-## Firebase
+### Firebase
 
-### Theorie
+#### Theorie
 
-### Ausprobieren
+#### Ausprobieren
 
 - [ ] Data Connect
 - [ ] Firebase MCP
 
-## Short Explanations
+### Short Explanations
 
 - Web Accessibility
   - https://martijnhols.nl/blog/accessibility-essentials-every-front-end-developer-should-know
@@ -67,6 +71,6 @@ Topics, Artikel und Videos zum lernen, einarbeiten und ausprobieren.
   - Whocanuse
 - How do Passphrases work?
 
-## Reading & Watching List
+### Reading & Watching List
 
 - [ ] https://blog.openreplay.com/api-gateway-patterns-and-practices/?ref=dailydev
