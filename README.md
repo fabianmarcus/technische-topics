@@ -1,9 +1,10 @@
-# Personal Technical Topics 
-Topics, articles and videos to study
+# Persönliche Lernliste
 
-## KI / AI
+Topics, Artikel und Videos zum lernen, einarbeiten und ausprobieren.
 
-### Study
+## Künstliche Intelligenz
+
+### Theorie
 
 - [ ] [MCP](https://modelcontextprotocol.io/docs/getting-started/intro)
 - [x] LLM Instruction Files
@@ -13,7 +14,7 @@ Topics, articles and videos to study
 - [ ] Spec Driven Dev mit OpenSpec
 - [ ] TDD mit Copilot
 
-### Try
+### Ausprobieren
 
 - [ ] ADRs - Skill und in die Instructions
 - [ ] [n8n](https://www.kapio.eu/tools/n8n)
@@ -23,21 +24,21 @@ Topics, articles and videos to study
 
 ## React / Next.js
 
-### Study
+### Theorie
 
 - [x] [Rspack](https://rspack.rs/)
 - [ ] [Oxidation Compiler](https://oxc.rs/)
 
-### Try
+### Ausprobieren
 
 - [ ] [SWR](https://swr.vercel.app/docs/mutation)
 - [ ] [Playwright Agent Testing](https://playwright.dev/docs/test-agents)
 
 ## Angular
 
-### Study
+### Theorie
 
-### Try
+### Ausprobieren
 
 ## Typescript
 
@@ -48,9 +49,9 @@ Topics, articles and videos to study
 
 ## Firebase
 
-### Study
+### Theorie
 
-### Try
+### Ausprobieren
 
 - [ ] Data Connect
 - [ ] Firebase MCP
