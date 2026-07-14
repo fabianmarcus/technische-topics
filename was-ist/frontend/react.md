@@ -24,6 +24,8 @@ Für kleinere Anwendungen mit wenigen Komponenten-Ebenen ist Prop Drilling oft u
 
 Alternativen sind der native React Context oder eine von zahlreichen State Management Bibliotheken wie Redux, Zustand, Jotai oder Recoil, die den State zentral verwalten und den Zugriff auf ihn vereinfachen.
 
+Mit [Zustand](https://github.com/pmndrs/zustand) habe ich bereits eigene Erfahrungen gemacht. Der Einstieg war einfach und es ließ sich effizient damit arbeiten.
+
 ### Custom Hook
 
 Ein Custom Hook ist quasi nichts anderes als eine React-Komponente ohne Markup-Ausgabe. Er kapselt Logik und zustandsbehaftetes Verhalten, das so in mehreren Komponenten wiederverwendet werden kann oder große Komponenten durch das Auslagern von Code verschlankt. Custom Hooks sind somit eine gute Möglichkeit, den Code sauber und modular zu halten.
