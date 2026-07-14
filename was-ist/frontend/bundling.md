@@ -34,4 +34,6 @@ Mit Webpack habe ich am meisten gearbeitet. Mittlerweile sind viele Starterpacks
 | [esbuild](https://esbuild.github.io/) | Extrem schneller Bundler und Transpiler, ebenfalls in Go geschrieben. | - |
 | [Oxidation Compiler](https://oxc.rs/) | Moderne Toolchain in Rust mit Fokus auf Parsing, Linting und Compiler-Bausteine. | - |
 
-## Ergebnis
+## Eigene Erfahrungen
+
+Bundler waren und sind für mich immer nur notwendiges Beiwerk. Gut, dass sie da sind, aber sie sollen eigentlich nur funktionieren. Ich habe nie einen eigenen Loader oder ein Plugin entwickelt. Allerdings habe ich mit Webpack in Selbstkonfiguration einiges angestellt. Webpack hat mir gut gefallen. Bei Vite und Rollup musste ich bislang nicht wirklich über die Grundeinstellungen hinaus.
