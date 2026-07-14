@@ -45,3 +45,7 @@ Das Einrichten ist manchmal etwas verwirrend, einmal eingerichtet ist er aber ei
 Rerendering ist der Prozess, bei dem React die Komponente neu rendert, die einen State Change erfahren hat, um die Änderungen in der Oberfläche widerzuspiegeln. Dabei werden auch alle abhängigen untergeordneten Komponenten neu gerendert.
 
 Das Rerendering ist eine der Hauptursachen für Performance-Probleme in React-Anwendungen. Kleine Unachtsamkeiten, wie das Vergessen von `useMemo`, `useCallback` oder einer Dependency im `useEffect`, können zu unnötigen unzähligen Rerenderings führen, die die Performance der Anwendung beeinträchtigen. Der React Compiler, ein gut eingestellter Linter und eine unterstützende IDE können hier helfen, indem sie das Rerendering optimieren und auf Fehler aufmerksam machen.
+
+### Eigene Erfahrungen
+
+Ich habe React, Angular und Vue ausprobiert. React gefällt mir soweit am besten. Ich mag die Nähe zum nativen Code in JSX (ohne extra template engine). Und ich mag funktionale und modulorientierte Programmierung. React hat auch Schwachstellen und Brain Fucks, aber alles in allem ist es für mich die persönlich beste Wahl.
