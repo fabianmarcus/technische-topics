@@ -26,7 +26,7 @@ Der Unterschied zwischen Delivery und Deployment liegt darin, dass bei Continuou
 
 Bei Continuous Deployment hingegen wird die Software nach dem erfolgreichen Durchlaufen der Pipeline automatisch ausgeliefert, ohne weiteres Zutun des Nutzers.
 
-## Erfahrungen
+## Eigene Erfahrungen
 
 Produkte mit denen ich zuletzt Pipelines angelegt habe, um ein Deployment zu automatisieren, sind zum Beispiel:
 

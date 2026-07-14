@@ -28,6 +28,6 @@ In der Regel lassen sich solche Funktionen über CLI-Befehle oder eine Web-GUI a
 
 Cloud-Dienste bieten die Möglichkeit, Anwendungen und Dienste automatisch zu skalieren. Einerseits können Ressourcen einfach über eine grafische Oberfläche manuell hoch- und runter skaliert werden. Andererseits ist es auch möglich, die Skalierung automatisch durch den Cloud-Dienst durchführen zu lassen. Bei mehr oder weniger Last werden dann automatisch mehr oder weniger Ressourcen bereitgestellt.
 
-## Erfahrungen
+## Eigene Erfahrungen
 
 Ich bin meistens in der Google Cloud Platform unterwegs. Damit habe ich bisher die meisten Erfahrungen gesammelt. Ich habe aber auch schon mal in eine Azure Umgebung reingeguckt. Das Prinzip sollte aber überall gleich sein. Die Unterschiede liegen eher in der Bedienung und den Angeboten.
