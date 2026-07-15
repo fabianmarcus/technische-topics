@@ -4,7 +4,7 @@
 
 Eine Pipeline ist eine Abfolge von Schritten, die vor dem Ausliefern einer Software automatisiert ausgeführt werden. Im TypeScript Ökosystem ist das mindestens: `npm install`, `npm lint`, `npm test` und `npm build`. Es können aber noch weitere Schritte ausgeführt werden, die notwendig sind, um die Software zu überprüfen und auszuliefern. Zum Beispiel das Erstellen von Docker-Images oder das Ausführen von Security-Checks.
 
-Die Pipeline kann ein lokales Skript sein, das auf dem eigenen Rechner ausgeführt wird, oder ein Cloud-Dienst wie GitHub Actions, GitLab CI/CD oder Azure DevOps. Bei einem Dienst wird die Pipeline bei jedem Push in das Repository automatisch ausgeführt. Der Dienst pullt anschließend den aktuellen Codestand des Repos und führt die definierten Schritte in einer eigenen (Container-)Umgebung aus.
+Die Pipeline kann ein lokales Skript sein, das auf dem eigenen Rechner ausgeführt wird, oder ein Cloud-Dienst wie GitHub Actions, GitLab CI/CD oder Azure DevOps. Bei einem Dienst wird die Pipeline meistens über eine spezielle YAML-Datei konfiguriert und bei jedem Push in das Repository automatisch entsprechend ausgeführt. Der Dienst pullt anschließend den aktuellen Codestand des Repos und führt die definierten Schritte in einer eigenen (Container-)Umgebung aus.
 
 Das Ergebnis der Pipeline ist entweder ein erfolgreich gebautes Artefakt, das ausgeliefert werden kann, oder ein Fehler, der behoben werden muss.
 
@@ -33,4 +33,4 @@ Produkte mit denen ich zuletzt Pipelines angelegt habe, um ein Deployment zu aut
 - GitHub Actions
 - GitLab CI/CD
 
-Im Fall einer ImmoScout24-Extension liefert die Deployment Pipeline in Github Actions den Code nach einer Prüfung in alle gängigen Browser-Stores aus.
+Im Fall einer ImmoScout24-Extension liefert die Deployment Pipeline in GitHub Actions ein neues GitHub Release automatisch in alle gängigen Browser-Stores aus.
