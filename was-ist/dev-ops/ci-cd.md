@@ -33,4 +33,4 @@ Produkte mit denen ich zuletzt Pipelines angelegt habe, um ein Deployment zu aut
 - GitHub Actions
 - GitLab CI/CD
 
-Im Fall einer ImmoScout24-Extension liefert die Deployment Pipeline den Code nach einer Prüfung in alle gängigen Browser-Stores aus.
+Im Fall einer ImmoScout24-Extension liefert die Deployment Pipeline in Github Actions den Code nach einer Prüfung in alle gängigen Browser-Stores aus.
