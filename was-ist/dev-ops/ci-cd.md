@@ -18,7 +18,7 @@ Continuous Integration bedeutet, dass der Code eines Repositories durch eine Pip
 
 Das hilft, Fehler beim Zusammenspiel von Code-Änderungen frühzeitig zu erkennen und zu beheben. Der Code wird dabei nicht ausgeliefert. Es wird quasi nur der vorangehende Teil der Deployment-Pipeline ausgeführt, um zu sehen, ob man ihn ausliefern könnte.
 
-## Continuous Delivery/Deployment (CD)
+## Continuous Delivery / Deployment (CD)
 
 Continuous Deployment bedeutet, dass Software nach dem erfolgreichen Durchlaufen der Pipeline automatisch auch ausgeliefert wird.
 
