@@ -12,7 +12,7 @@ Tool Calling ist ein Konzept, das LLMs ermöglicht, den zuständigen Agenten anz
 
 Der Agent teilt dem LLM am Anfang der Interaktion mit, welche Tools oder APIs er aufrufen kann, und das LLM kann dann entscheiden, welche Tools es für die Beantwortung der Anfrage benötigt. Das LLM kann auch mehrere Tools in einer Anfrage kombinieren, um eine umfassendere Antwort zu generieren.
 
-Bittet das LLM den Agenten, ein Tool aufzurufen, ruft der Agent die für das Tool hinterlegte Funktion mit den erforderlichen Parametern auf, die es vom LLM erhalten hat. Das Ergebnis geht für die weitere Verarbeitung zurück ans LLM.
+Bittet das LLM den Agenten, ein Tool aufzurufen, ruft der Agent die für das Tool hinterlegte Funktion mit den erforderlichen Parametern auf, die er vom LLM erhalten hat. Das Ergebnis geht für die weitere Verarbeitung zurück ans LLM.
 
 Beispielsweise kann ein LLM eine Anfrage erhalten, um das Wetter in einer bestimmten Stadt zu überprüfen. Das LLM kennt die Antwort aufgrund der Aktualität des Wetters nicht, da das Modell auf älteren Trainingsdaten basiert. Stattdessen kann das LLM den zuständigen Agenten anweisen, eine Wetter-API aufzurufen und die aktuellen Wetterdaten abzurufen. Der Agent ruft die API auf, erhält die Daten und sendet sie zurück an das LLM, das die Daten in seine Textantwort einfügt und dem Benutzer präsentiert.
 
