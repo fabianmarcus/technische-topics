@@ -2,6 +2,8 @@
 
 Barrierefreiheit (engl. Accessibility, kurz a11y) in der Webentwicklung kümmert sich darum, dass auch Behinderte die Inhalte und Funktionen einer Webanwendung nutzen können. Dazu gehören zum Beispiel Menschen mit Sehbehinderungen, Hörbehinderungen, motorischen Einschränkungen oder kognitiven Beeinträchtigungen. Sie verwenden oft assistive Technologien wie Screenreader, Braille-Displays oder alternative Eingabegeräte, um auf digitale Inhalte zuzugreifen. Durch die Verwendung von ARIA-Attributen, semantischem HTML und anderen Techniken können Entwickler sicherstellen, dass ihre Webanwendungen von den genannten assistiven Technologien korrekt interpretiert werden und somit für alle Benutzer zugänglich sind.
 
+a11y ist überigens ein sogenanntes Numeronym, das die 11 Buchstaben zwischen dem ersten und letzten Buchstaben des Wortes "Accessibility" repräsentiert. Kurzum: a11y = Accessibility.
+
 ## Grundlagen in 13 Tagen
 
 Eine gute Übersicht zu den Grundlagen der Barrierefreiheit in der Webentwicklung bietet der 13-tägige a11y-Kalender von Kasey Bonifacio:
