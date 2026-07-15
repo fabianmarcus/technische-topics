@@ -1,7 +1,5 @@
 # Bundling
 
-## Was ist ein Bundler (kurz & knapp)?
-
 So wie ein Compiler den Quellcode in Maschinensprache übersetzt, übersetzt ein Bundler den Quellcode in ein Format, das von Browsern verstanden wird. Browser können nur JavaScript, CSS und HTML direkt interpretieren. Alles andere muss vorher in diese Formate übersetzt werden. Eine TypeScript-Anwendung kann vom Browser als solche nicht direkt ausgeführt werden. Ein Bundler übernimmt diese Aufgabe und kann dabei auch noch weitere Optimierungen durchführen.
 
 Optimieren kann zum Beispiel bedeuten:
@@ -14,9 +12,9 @@ Optimieren kann zum Beispiel bedeuten:
 - Assets wie Bilder, Fonts oder Videos in das Bundle kopieren und dabei für die Nutzung optimieren.
 - Und vieles mehr...
 
-Am Ende entsteht ein `distribution`-Ordner, der die komplette optimierte und startbare Anwendung enthält. Dieser Ordner wird in der Regel als Artefakt in die CI/CD-Pipeline eingebunden und auf den Server oder in die Cloud deployt.
+Am Ende entsteht ein `distribution`-Ordner, der die komplette optimierte und startbare Anwendung enthält. Dieser Ordner wird in der Regel als Artefakt in die CI/CD-Pipeline eingebunden und in die Cloud bzw. auf den Server deployed.
 
-Dasselbe gilt für Node.js. Auch Node.js kann nur JavaScript direkt ausführen. TypeScript muss vorher in JavaScript übersetzt werden. Ein Bundler kann auch hier die Übersetzung übernehmen und den Code optimieren. Hier kann und muss aber nicht ganz so viel optimiert werden. Prinzipiell reicht es auch, den TypeScript-Code ohne Bundler mit `tsc` in JavaScript zu übersetzen.
+Dasselbe gilt für Node.js. Auch Node.js kann nur JavaScript direkt ausführen. TypeScript muss vorher in JavaScript übersetzt werden. Ein Bundler kann auch hier die Übersetzung übernehmen und den Code optimieren. Hier kann und muss aber nicht ganz so viel optimiert werden wie für Browser. Prinzipiell reicht es auch, den TypeScript-Code ohne Bundler mit `tsc` oder `esbuild` in JavaScript zu übersetzen.
 
 ## Produkte
 
