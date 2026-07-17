@@ -10,7 +10,7 @@ Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](was-ist/README.md)
 
 #### Theorie
 
-- [ ] [MCP](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [x] [MCP](https://modelcontextprotocol.io/docs/getting-started/intro)
 - [x] LLM Instruction Files
 - [x] Agent Coding ([Copilot CLI](https://github.com/features/copilot/cli), Claude Code)
 - [ ] KI - Product Overview
