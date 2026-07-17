@@ -6,13 +6,13 @@ Der Begriff Künstliche Intelligenz wird mittlerweile sehr undifferenziert verwe
 
 | Begriff | Erklärung |
 | --- | --- |
+| LLM | Large Language Model (kurz KI-Modell), das die Daten enthält |
+| Token | Kleinste Informationseinheit, die ein LLM verarbeiten kann. Ein Token kann ein Wort, ein Satzzeichen oder ein Teil eines Wortes sein |
+| Tokenisierung | Prozess, bei dem ein Text in Token zerlegt wird, um ihn für das LLM verarbeitbar zu machen |
 | Vektor | Mathematische Darstellung von Informationen (Beispiel: "Hund" = [0.1, 0.2, 0.3, 0.4]) |
 | Embedding | Vektorisierung von Informationen, um sie mathematisch darzustellen und zu vergleichen |
 | Kosinus-Ähnlichkeit | Maß für die Ähnlichkeit von Vektoren, um die Relevanz von Informationen zu bestimmen |
 | Gewichtung | Maß für die Relevanz von Informationen, die in den Trainingsdaten enthalten sind |
-| LLM | Large Language Model (kurz KI-Modell), das die Daten enthält |
-| Token | Kleinste Informationseinheit, die ein LLM verarbeiten kann. Ein Token kann ein Wort, ein Satzzeichen oder ein Teil eines Wortes sein |
-| Tokenisierung | Prozess, bei dem ein Text in Token zerlegt wird, um ihn für das LLM verarbeitbar zu machen |
 | NLP | Natural Language Processing, die Transformation von natürlicher Sprache in mathematische Vektoren und umgekehrt |
 | Trainingsdaten | Strukturierte Informationen, die zum Trainieren von KI-Modellen verwendet werden |
 | RAG | Retrieval Augmented Generation, eine Methode, bei der KI-Modelle auf externe Daten zugreifen, um ihre Antworten zu verbessern |
