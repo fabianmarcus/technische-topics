@@ -20,7 +20,7 @@ Die vom Agenten aufgerufene Funktion kann ein schlanker Adapter für einen API-,
 
 ### Praktisches Beispiel
 
-Low Level Code Beispiel für einen wirklichen Eindruck zu bekommen, wie Tool Calling in der Praxis funktioniert. Das Beispiel nutzt Gemini, die anderen Anbieter funktionieren aber analog.
+Low Level Code Beispiel, um einen wirklichen Eindruck davon zu bekommen, wie Tool Calling in der Praxis funktioniert. Das Beispiel nutzt Gemini, die anderen Anbieter funktionieren analog.
 
 ```ts
 import { GoogleGenAI } from "@google/genai";
@@ -143,4 +143,4 @@ runGeminiToolLoop(
 
 ## Eigene Erfahrungen
 
-Wie viele andere habe ich MCP mit Tool Calling wahrscheinlich schon tausend Mal genutzt, ohne es zu wissen; der Vorgang läuft für Nutzer ja komplett transparent. Als Entwickler damit gearbeitet habe ich allerdings noch nicht. Mir war aber wichtig, das Prinzip zu verstehen. Vielleicht baue ich irgendwann mal ein kleines Projekt, um Tool Calling in der Praxis zu testen.
+Wie viele andere habe ich MCP mit Tool Calling wahrscheinlich schon tausend Mal genutzt, ohne es zu wissen; der Vorgang läuft für Nutzer ja komplett transparent ab. Als Entwickler damit gearbeitet habe ich allerdings noch nicht. Mir war aber wichtig, das Prinzip zu verstehen. Vielleicht baue ich irgendwann mal ein kleines Projekt, um Tool Calling in der Praxis zu testen.
