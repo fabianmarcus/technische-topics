@@ -120,6 +120,8 @@ Der generelle Ablauf ist also ungefähr so:
 - Diese erweiterte Tokensequenz wird erneut durch das LLM verarbeitet, um das nächste Token vorherzusagen
 - Dieser Prozess wird wiederholt, bis das LLM ein Endtoken vorhersagt oder die maximale Länge der Antwort erreicht ist
 
+Dieser ganze Prozess der Vorhersage (Inferenz) ist ein Teilbereich des Buzzwords NLP, Natural Language Processing, das oft im Zusammenhang mit Künstlicher Intelligenz und Large Language Models fällt. Damit beschäftige ich mich noch gesondert.
+
 ### Diagrammartig zusammengefasst
 
 ```text
