@@ -8,7 +8,7 @@ Um Konfigurationen wiederverwendbar zu machen, kann man sogenannte "Images" baue
 
 Um mehrere Container als Orchester miteinander laufen zu lassen, kann man "Docker Compose" nutzen, um sie zu orchestrieren. Dazu wird eine Konfigurationsdatei `docker-compose.yml` geschrieben, die beschreibt, welche Container gestartet werden sollen und wie sie miteinander kommunizieren können.
 
-So viel als grundlegende Erklärung zu meinem Verständnis von Docker. Mehr Infos gibt es auf [docker.com](https://www.docker.com/).  
+So viel zu meinem grundlegenden Verständnis von Docker.  
 Nachfolgend soll es nur noch um konkrete Learnings gehen, die ich bei der Arbeit mit Docker mache.
 
 ## Eigene Erfahrungen
