@@ -41,9 +41,12 @@ Der weitere Workflow geht ungefähr so:
 - Vektorisierung: die Token-IDs werden in Vektoren umgewandelt, um sie mehrdimensional vergleichen zu können.
 - Training: die Vektoren werden dazu genutzt, das neuronale Netz zu trainieren, sodass das LLM die Zusammenhänge zwischen den Vektoren erkennt und daraus neue Informationen ableiten kann.
 
-### Tokenisierung
+Was bedeuten diese ganzen Wörter...
 
-Tokenisierung ist das Zerlegen von Text in einzelne Teile. Ein Token kann ein Wort, nur ein Teil eines Wortes oder auch nur ein Satzzeichen sein.
+### Tokens, Tokenisierung
+
+**Tokenisierung** ist das Zerlegen von Text in einzelne Teile.  
+Ein **Token** kann ein Wort, nur ein Teil eines Wortes oder auch nur ein Satzzeichen sein.
 
 ***Tokenizer:*** Die Tokenisierung erfolgt durch den sogenannten *Tokenizer*. Der Tokenizer selbst muss auch trainiert oder konfiguriert werden, damit er aus den Trainingsdaten ein immer gleiches Vokabular ableiten kann. Dazu wird ihm ein individueller Algorithmus hinterlegt. Das Vokabular für einen Textdatensatz ist nur pro Tokenizer immer gleich. Unterschiedlich eingestellte Tokenizer ergeben unterschiedliche Vokabulare. Das Training des Tokenizers erfolgt vor dem Training des LLMs auf Basis der Trainingsdaten.
 
