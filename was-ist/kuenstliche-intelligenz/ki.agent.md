@@ -49,6 +49,12 @@ Im unteren Code Beispiel gehören dazu vor allem `runAgent()`, `executeAction()`
 
 Zum Harness gehören neben direkten Agenten-Funktionalitäten wie Loop, Zustand und Abbruchbedingungen auch vor- oder nachgelagerte Tools wie OCR, Websuche, Markdown-Interpreter, API-Client, Dateileser und Ähnliches. Also alles, was der Agent für seine Arbeit benötigt, aber nicht direkt zu seiner Entscheidungslogik gehört.
 
+## Eigene Erfahrungen
+
+Bislang habe ich Agenten nur transparent über Benutzeroberflächen genutzt. Beruflich wie privat arbeite ich viel mit GitHub Copilot für VS Code. Das Prompten von Features bzw. das hinein generieren lassen von Code in die Codebasis ist ein klassischer Fall für Agentensysteme.
+
+Man gibt ein gewünschtes Ziel vor (z. B. "Implementiere eine Funktion, die X macht") und der Agent arbeitet in mehreren Schritten darauf hin, bis das Ziel erreicht ist. Dabei kann er auf verschiedene Tools zugreifen, wie z. B. die Codebasis, Dokumentation oder externe APIs. Auch das Einbeziehen von Instructions und Skills wird über das Agentensystem gesteuert. Copilot Agent in VS Code ist also ein Agentensystem, das auf ein Modell zugreift und die Tool Calls für die Codebearbeitung orchestriert.
+
 ## Agent Code Beispiel
 
 ```ts
