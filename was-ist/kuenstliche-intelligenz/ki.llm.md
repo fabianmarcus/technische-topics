@@ -8,7 +8,7 @@ Wie entsteht so ein LLM und was ist drin?
 
 Um das Gehirn mit Wissen zu füllen, haben unzählige Menschen und automatisierte Crawl-Prozesse natürliche Informationen strukturiert gesammelt, gesäubert, beschrieben und bewertet (ähnlich, wie Google es schon jeher für seine Suchmaschine macht). Dabei entsteht eine gigantische Textdatei (`.txt` oder `.json`), die oft mehrere Terabyte groß ist und Millionen von Textbausteinen enthält: **die sogenannten Trainingsdaten.** Diese Textdatei ist das Lehrbuch für das LLM, aber nicht das LLM selbst.
 
-Die Inhalte stammen aus Online-Lexika (wie Wikipedia), Fachbüchern, Literaturbüchern, Foren, Blogs, Social-Media-Beiträgen, wissenschaftlichen Artikeln, Produktbeschreibungen, Software-Dokumentationen und vielem mehr. Dementsprechend unterschiedlich ist die Qualität der Daten. Ein wichtiger Prozess vor dem Training ist daher auch die Datenaufbereitung.
+Die Inhalte stammen aus Online-Lexika (wie Wikipedia), Fachbüchern, Literaturbüchern, Foren, Blogs, Social-Media-Beiträgen, wissenschaftlichen Artikeln, Produktbeschreibungen, Software-Dokumentationen und vielem mehr. Dementsprechend unterschiedlich ist die Qualität der Daten. **Ein wichtiger Prozess vor dem Training ist daher auch die Datenaufbereitung**: Entfernung von Duplikaten, Spam, Werbung, toxischen Inhalten, persönlichen Daten, urheberrechtlich geschützten Inhalten und anderen unerwünschten Informationen. Außerdem werden die Daten inhaltlich bewertet und mit Metadaten versehen, um die Qualität der Trainingsdaten zu erhöhen.
 
 Der Inhalt dieser Datei sieht in etwa so aus und beschreibt das Wort "Tür" in unterschiedlichen Kontexten:
 
@@ -163,4 +163,4 @@ Die Datei besteht aus zwei Hauptkomponenten:
 
 ## Ende
 
-Und hier, lieber Leser, sind wir zunächst am Ende der ganzheitlichen Einarbeitung in die Funktionsweise eines LLMs angekommen. Wie ein neuronales Netzwerk funktioniert, schaue ich mir vielleicht später einmal an; vielleicht auch nicht. Wie genau Vektoren miteinander verrechnet werden, werde ich mir wohl niemals anschauen. Ich möchte mich lieber auf die praktische Arbeit mit KI-Tools konzentrieren.
+Und hier, lieber Leser, sind wir zunächst am Ende der ganzheitlichen Einarbeitung in die Funktionsweise eines LLMs angekommen. Wie ein neuronales Netzwerk funktioniert, schaue ich mir vielleicht später einmal an; vielleicht auch nicht. Wie die Mathematik dahinter genau funktioniert, werde ich mir nicht mehr anschauen. Ich möchte mich lieber auf die praktische Arbeit mit KI-Tools konzentrieren.
