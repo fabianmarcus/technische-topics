@@ -17,5 +17,6 @@ Der Begriff Künstliche Intelligenz wird mittlerweile sehr undifferenziert verwe
 | [RAG](ki.rag.md) | Retrieval Augmented Generation, eine Methode, bei der KI-Modelle auf externe Daten zugreifen, um ihre Antworten zu verbessern. |
 | [Prompt](ki.llm.md) | Eingabeaufforderung, die an ein KI-Modell gesendet wird, um eine Antwort zu generieren, unterteilbar in System- und User-Prompt. |
 | [Halluzination](ki.halluzination.md) | Wenn ein KI-Modell eine Antwort generiert, die nicht auf den Trainingsdaten basiert und somit faktisch falsch ist. |
+| [Agent](ki.agent.md) | Ein Agent ist ein System, das ein KI-Modell nutzt, um in mehreren Schritten auf ein Ziel hinzuarbeiten. |
 | [MCP](ki.mcp.md) | Model-Context-Protocol, ein Protokoll, das die Kommunikation zwischen dem KI-Modell und Agenten steuert. |
 | [F&A](ki.qa.md) | Fragen & Antworten - ein Format, bei dem ich einige Fragen an Cope hier festhalte. |
