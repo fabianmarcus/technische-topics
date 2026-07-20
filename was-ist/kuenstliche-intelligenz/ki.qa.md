@@ -4,7 +4,7 @@
 
 ## Inhaltsverzeichnis
 
-- [Wenn ich einem Modell die Aufgabe gebe, mir 3 Eigenschaften einer Tür zu nennen. Wie bestimmt es, dass es 3 Eigenschaften genannt hat und nicht zwei oder 4?](#wenn-ich-einem-modell-die-aufgabe-gebe-mir-3-eigenschaften-einer-tür-zu-nennen-wie-bestimmt-es-dass-es-3-eigenschaften-genannt-hat-und-nicht-zwei-oder-4)
+- [Wenn ich einem Modell die Aufgabe gebe, mir 3 Eigenschaften einer Tür zu nennen. Wie bestimmt es, dass es 3 Eigenschaften genannt hat und nicht 2 oder 4?](#wenn-ich-einem-modell-die-aufgabe-gebe-mir-3-eigenschaften-einer-tür-zu-nennen-wie-bestimmt-es-dass-es-3-eigenschaften-genannt-hat-und-nicht-zwei-oder-4)
 - [Sammeln die großen LLM-Anbieter die Trainingsdaten selbst oder arbeiten sie mit den selben Trainingsdaten von einem Zulieferer?](#sammeln-die-großen-llm-anbieter-die-trainingsdaten-selbst-oder-arbeiten-sie-mit-den-selben-trainingsdaten-von-einem-zulieferer)
 
 ## Inhalt
