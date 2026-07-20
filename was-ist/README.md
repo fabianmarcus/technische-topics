@@ -1,8 +1,8 @@
 # Und was ist das...?
 
-Selbstgeschriebene Erklärungen zu technischen Themen, die mir bei meiner täglichen Arbeit begegnen. *Okay, Inline Suggestions sind eingeschaltet. Ich wollte das dann aber eh so formulieren. Ich formuliere es auch oft um!*  
+Selbstgeschriebene Erklärungen zu technischen Themen, die mir bei meiner täglichen Arbeit begegnen. *Okay, Inline Suggestions sind eingeschaltet. Ich wollte das dann aber eh so formulieren. Ich formuliere es auch oft um! Inline Suggestions sind bei Textvorhersagen übrigens recht häufig falsch, ist mir aufgefallen. Anyways...*
 
-Anyways... Ich schreibe die Themen auf, um sie zu verstehen, nachzuschlagen und zur Auffrischung noch einmal durchgehen zu können.
+Ich schreibe die Themen auf, um sie zu verstehen, nachzuschlagen und zur Auffrischung noch einmal durchgehen zu können.
 
 Sie sind nicht als vollständige Dokumentation gedacht, sondern eher als persönliche Notizen zu konkreten Sachverhalten. Ohne Anspruch auf Vollständigkeit oder technische Präzision.
 
