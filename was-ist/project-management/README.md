@@ -6,4 +6,4 @@ Was ich bislang von Projekt Management Methoden und Tools mitbekommen habe.
 
 | Bereich | Fokus |
 | --- | --- |
-| [Scrum](scrum.md) | Rollen, Abläufe und zentrale Begriffe aus dem Scrum-Framework. |
+| [Scrum](SCRUM.md) | Rollen, Abläufe und zentrale Begriffe aus dem Scrum-Framework. |

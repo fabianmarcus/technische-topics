@@ -4,7 +4,7 @@
 
 Angefangen hat alles mit den Chatbots. Ein Chatbot ist ein System, das auf eine Eingabe reagiert und eine Antwort generiert.
 
-Der Benutzer hat über die Benutzeroberfläche des Anbieters (ChatGPT, Gemini, Claude, etc.) einen Text eingegeben, der wurde an das Modell geschickt, das Modell hat die Antwort generiert und an den Benutzer zurückgeschickt. Fertig. Das ist ein Chatbot. Irgendwann kam noch [Tool Calling](mcp.md) dazu, das Prinzip blieb aber dasselbe.
+Der Benutzer hat über die Benutzeroberfläche des Anbieters (ChatGPT, Gemini, Claude, etc.) einen Text eingegeben, der wurde an das Modell geschickt, das Modell hat die Antwort generiert und an den Benutzer zurückgeschickt. Fertig. Das ist ein Chatbot. Irgendwann kam noch [Tool Calling](MCP.md) dazu, das Prinzip blieb aber dasselbe.
 
 Die Weiterentwicklung des Chatbots ist der Agent.
 

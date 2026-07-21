@@ -2,7 +2,7 @@
 
 Scrum ist ein agiles Vorgehensmodell, das in der Softwareentwicklung eingesetzt wird. Es ist ein Rahmenwerk, das Teams dabei unterstützt, komplexe Projekte zu organisieren und zu managen. Scrum basiert auf iterativen und inkrementellen Prozessen, bei denen die Arbeit in festen Zeitabschnitten, sogenannten Sprints, durchgeführt wird.
 
-**Nachfolgend eine Übersicht von Begrifflichkeiten samt kurzer Erklärung, die mir bei der Arbeit als Teil eines Scrum-Teams begegnet sind.**
+**Nachfolgend eine Übersicht von Begrifflichkeiten samt kurzer Erklärung, die mir bei der Arbeit in Scrum-Teams begegnet sind.**
 
 ## Meetings
 

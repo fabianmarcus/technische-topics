@@ -2,7 +2,7 @@
 
 ## Arbeitsweise eines LLMs
 
-Wie in [Was ist ein LLM?](llm.md) beschrieben, generiert ein LLM Antworten auf Basis von Wahrscheinlichkeiten. Es **berechnet**, welches Wort (bzw. Token) als nächstes im Satz am wahrscheinlichsten ist, und hängt dieses an die bisherige Antwort an.
+Wie in [Was ist ein LLM?](LLM.md) beschrieben, generiert ein LLM Antworten auf Basis von Wahrscheinlichkeiten. Es **berechnet**, welches Wort (bzw. Token) als nächstes im Satz am wahrscheinlichsten ist, und hängt dieses an die bisherige Antwort an.
 
 Es gibt also keinen feststehenden Textstring zurück wie: `Die Tür hat eine Klinke.`, der irgendwo genau so gespeichert ist. Sondern es berechnet auf Grundlage des Prompts zunächst, dass `Die` das wahrscheinlichste erste Token der Antwort ist. Danach berechnet es ein wahrscheinlich passendes nächstes Token: `Tür`, und so weiter, bis die Antwort fertig ist: `Die Tür hat eine Klinke`.
 
@@ -46,7 +46,7 @@ Gefährlich sind auch Widersprüche zwischen System-, Entwickler- und Nutzeranwe
 
 ### Kontext und Hintergrundinformationen
 
-Wenn das LLM über ausreichenden Kontext verfügt, um die Anfrage zu verstehen, ist die Wahrscheinlichkeit geringer, dass es halluziniert. Wenn jedoch wichtige Informationen fehlen oder der Kontext unklar ist, kann das Modell dazu neigen, falsche oder erfundene Antworten zu generieren. Deshalb ist RAG und [Tool Calling](./mcp.md) so wichtig, um dem LLM die Möglichkeit zu geben, auf individuelle und aktuelle Informationen zuzugreifen. Wobei auch hier darauf zu achten ist, dass ordentliche, verlässliche RAG-Quellen vorliegen und die MCP-Tools so definiert sind, dass tatsächlich das richtige Tool für die jeweilige Anfrage aufgerufen wird. Ansonsten endet auch das in Halluzinationen.
+Wenn das LLM über ausreichenden Kontext verfügt, um die Anfrage zu verstehen, ist die Wahrscheinlichkeit geringer, dass es halluziniert. Wenn jedoch wichtige Informationen fehlen oder der Kontext unklar ist, kann das Modell dazu neigen, falsche oder erfundene Antworten zu generieren. Deshalb ist RAG und [Tool Calling](./MCP.md) so wichtig, um dem LLM die Möglichkeit zu geben, auf individuelle und aktuelle Informationen zuzugreifen. Wobei auch hier darauf zu achten ist, dass ordentliche, verlässliche RAG-Quellen vorliegen und die MCP-Tools so definiert sind, dass tatsächlich das richtige Tool für die jeweilige Anfrage aufgerufen wird. Ansonsten endet auch das in Halluzinationen.
 
 ## Eigene Erfahrungen
 
