@@ -4,7 +4,7 @@
 
 Angefangen hat alles mit den Chatbots. Ein Chatbot ist ein System, das auf eine Eingabe reagiert und eine Antwort generiert.
 
-Der Benutzer hat über die Benutzeroberfläche des Anbieters (ChatGPT, Gemini, Claude, etc.) einen Text eingegeben, der wurde an das Modell geschickt, das Modell hat die Antwort generiert und an den Benutzer zurückgeschickt. Fertig. Das ist ein Chatbot. Irgendwann kam noch [Tool Calling](ki.mcp.md) dazu, das Prinzip blieb aber dasselbe.
+Der Benutzer hat über die Benutzeroberfläche des Anbieters (ChatGPT, Gemini, Claude, etc.) einen Text eingegeben, der wurde an das Modell geschickt, das Modell hat die Antwort generiert und an den Benutzer zurückgeschickt. Fertig. Das ist ein Chatbot. Irgendwann kam noch [Tool Calling](mcp.md) dazu, das Prinzip blieb aber dasselbe.
 
 Die Weiterentwicklung des Chatbots ist der Agent.
 
@@ -15,7 +15,7 @@ Allgemein ausgedrückt ist ein Agent ein Chatbot, der zur Lösung von Problemen 
 Das kann er durch seine agentischen Fähigkeiten und Eigenschaften:
 
 - **Mehrschrittigkeit (Loop):** Der Agent wiederholt seine Ausführung in einer Schleife (z. B. `while`) bis eine von mehreren Abbruchbedingungen erfüllt ist. Bei jedem Schritt wird, falls möglich, mit dem Ergebnis des vorherigen Schrittes weitergearbeitet.
-- **Zustandsführung:** Es wird ein Zustandsobjekt definiert. Im unteren Code Snippet enthält dieses zum Beispiel den aktuellen Schritt, die Höchstanzahl von Schritten, das gewünschte Ziel, das (erweiterte) Prompt bzw. den Kontext und ein Flag, ob das Ziel bereits erreicht ist. Diese Metadaten werden bei jedem Schritt aktualisiert und auf dem neuen Stand weitergearbeitet.
+- **Zustandsführung:** Es wird ein Zustandsobjekt definiert. Im unteren Code Snippet enthält dieses zum Beispiel den aktuellen Schritt, die Höchstanzahl von Schritten, das gewünschte Ziel, das (erweiterte) Prompt bzw. den Kontext, und ein Flag, ob das Ziel bereits erreicht ist. Diese Metadaten werden bei jedem Schritt aktualisiert. Im nächsten Schritt wird auf dem neuen Stand weitergearbeitet.
 - **Tool-Nutzung**: Wie auch der Chatbot mit Tool Calling kann der Agent auf Tools zugreifen, um seine Aufgaben zu erledigen. Das können z. B. Websuche, Codeausführung, Datenbankabfragen oder andere Agenten sein.
 - **Planung:** Der Agent kann aufgrund von programmatisch festgelegten Regeln (`if/else`) die nächste Aktion bestimmen oder den aktuellen Kontext an das Modell schicken, um eine Entscheidung treffen zu lassen. Das kann zum Beispiel die Auswahl des nächsten Tools sein, das Aufrufen eines anderen Agenten oder das Generieren von Text.
 - **Abbruchbedingung:** Damit der Agent nicht ewig in seiner Schleife läuft, werden Abbruchbedingungen definiert. Das kann zum Beispiel die Erreichung des Ziels, das Erreichen der maximalen Schrittzahl oder ein Fehler sein.

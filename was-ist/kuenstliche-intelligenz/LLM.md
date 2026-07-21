@@ -36,7 +36,7 @@ Sie stand unschlüssig vor der schweren Eichentür. Das Schloss war alt und verr
 
 Der weitere Workflow geht ungefähr so:
 
-- Tokenizer einstellen: der Algorithmus, der die Trainingsdaten in Tokens zerlegt, wird definiert.
+- Tokenizer einstellen: der Algorithmus wird definiert, der die Trainingsdaten in Tokens zerlegt.
 - Vokabular anlegen: der Tokenizer leitet aus den Trainingsdaten ein festes, numeriertes Token-Vokabular ab.
 - Vektorisierung: die Token-IDs werden in Vektoren umgewandelt, um sie mehrdimensional vergleichen zu können.
 - Training: die Vektoren werden dazu genutzt, das neuronale Netz zu trainieren, sodass das LLM die Zusammenhänge zwischen den Vektoren erkennt und daraus neue Informationen ableiten kann.
@@ -61,7 +61,7 @@ Der Türrahmen ist aus Holz.
 Nehmen wir an, der Tokenizer ist darauf eingestellt, Text in einsilbige Wörter und Satzzeichen zu zerlegen. Dann ergibt das:
 
 ```text
-["Der", "Tür", "rahmen", "ist", "aus", "Holz", "."]
+["Der", "Tür", "rah", "men", "ist", "aus", "Holz", "."]
 ```
 
 Jedes dieser Tokens bekommt anschließend eine numerische ID. Zum Beispiel könnte `Tür` die ID `1234` bekommen (in der Regel wird einfach hochgezählt).
@@ -70,7 +70,7 @@ In den nächsten Schritten wird nur noch mit dieser numerischen ID gearbeitet, n
 
 ### Vokabular
 
-Die Liste der abgeleiteten Tokens samt ihrer numerischen ID wird in einer Datei gespeichert. Diese Datei fungiert als Wörterbuch, das später noch gebraucht wird.
+Die Liste der abgeleiteten Tokens samt ihrer numerischen ID wird in einer Datei gespeichert. Diese Datei fungiert als Wörterbuch (Vokabelheft), das später noch gebraucht wird.
 
 ### Vektorisierung
 
@@ -80,9 +80,7 @@ Die ID von `Tür`, `1234` wird nun in einen Embedding-Vektor umgewandelt. Ein Ve
 ID 1234 = Vektor [0.1, 0.2, 0.3, 0.4]
 ```
 
-(*mehr weiß ich hierüber nicht*)
-
-In der realen Praxis sind die Vektoren viel größer und haben mehrere hundert oder tausend Dimensionen. Jede Zahl ist eine Position in diesem multidimensionalen Raum.
+In der realen Praxis sind die Vektoren viel größer und haben mehrere hundert oder tausend Dimensionen. Jede Zahl ist eine Position in diesem multidimensionalen Raum. Aus der Schule kennt man den zweidimensionalen Raum (x,y) und den dreidimensionalen Raum (x,y,z). Ein Vektor hat in unserem KI-Kontext aber eher hunderte oder tausende Dimensionen, die man sich nur schwer vorstellen kann. *(mehr weiß ich hierüber auch nicht)*
 
 **Der Clou an der ganzen Sache ist,** dass diese Vektoren miteinander verglichen werden können. Je ähnlicher zwei Vektoren sind, je näher sie im Vektorraum beieinanderliegen, desto ähnlicher sind auch die Informationen, die sie repräsentieren. So kann das LLM später erkennen, dass `Tür` und `Fenster` ähnliche Konzepte sind, während `Tür` und `Hund` sehr unterschiedliche Konzepte sind.
 
@@ -90,7 +88,7 @@ In der realen Praxis sind die Vektoren viel größer und haben mehrere hundert o
 
 ### Das LLM-Training
 
-Nun, da die gesammelten Textdaten in Tokens und Vektoren umgewandelt vorliegen, kann das eigentliche Training des LLMs beginnen. Es lernt, welche Tokens in welchen Kontexten typischerweise zusammen auftreten. Dabei werden Embedding-Vektoren und weitere interne Gewichte schrittweise angepasst, um Vorhersagefehler zu verringern. Es entstehen Vektorrepräsentationen, in denen ähnliche Kontexte oft näher beieinanderliegen, während das Modell gleichzeitig die nächste-Token-Vorhersage verbessert.
+Nun, da die gesammelten Textdaten in Tokens und Vektoren umgewandelt vorliegen, kann das eigentliche Training des LLMs beginnen. Es lernt, welche Tokens in welchen Kontexten typischerweise zusammen auftreten. Dabei werden die Embedding-Vektoren und weitere interne Gewichte schrittweise angepasst, um Vorhersagefehler zu verringern. Es entstehen Vektorrepräsentationen, in denen ähnliche Kontexte oft näher beieinanderliegen, während das Modell gleichzeitig die nächste-Token-Vorhersage verbessert.
 
 Im Training verfeinert das LLM die statistischen Zusammenhänge zwischen den Tokens, um in einer Antwort das nächste Token eines Satzes besser vorhersagen zu können.
 
@@ -105,13 +103,13 @@ Der Ablauf ist ungefähr so:
 7. Das Trainingsprogramm berechnet die Abweichung (Fehler, Loss) der Vorhersage
 8. Das Trainingsprogramm passt die Einstellung (Embeddings, Gewichte) des LLMs an, um die Vorhersage zu verbessern
 
-Dieser Prozess wird viele Millionen Male für sehr viele tokenisierte Textausschnitte wiederholt, bis das LLM die Vorhersage des nächsten Tokens in den Trainingsausschnitten ausreichend beherrscht oder das Budget alle ist. Dann ist das LLM fertig trainiert und kann für die Inferenz genutzt werden.
+Dieser Prozess wird viele Millionen Mal für sehr viele tokenisierte Textausschnitte wiederholt, bis das LLM die Vorhersage des nächsten Tokens in den Trainingsausschnitten ausreichend beherrscht oder das Budget alle ist. Dann ist das LLM fertig trainiert und kann für die Vorhersage (Inferenz) genutzt werden.
 
 ### Antwortgenerierung durch Vorhersage (Inferenz)
 
 Genauso, wie ein LLM die Trainingsdaten verarbeitet und im Training das nächste Token vorhersagt, reagiert es auch auf Benutzeranfragen (Prompts). Das Prompt des Benutzers wird tokenisiert, in Vektoren umgewandelt und durch das LLM geschickt. Die Daten des Prompts sind danach im Vektorraum repräsentiert. Mit diesem Wissen über den Prompt kann nun Schritt für Schritt die Antwort generiert und an die bisherige Ausgabe (Prompt + neue Tokens) angehängt werden.
 
-Da das LLM Antworten nicht einfach als gespeicherte Sätze zurückgibt, setzt es sie schrittweise per Vorhersage zusammen. Es sagt also nicht: `Die Tür hat eine Klinke.`, sondern es berechnet zunächst, dass `Die` das wahrscheinlichste erste Token der Antwort ist. Danach berechnet es ein wahrscheinlich passendes nächstes Token: `Tür`, und so weiter, bis die Antwort fertig ist: `Die Tür hat eine Klinke`.
+Da das LLM Antworten nicht einfach als gespeicherte Sätze zurückgibt, setzt es sie schrittweise per Vorhersage zusammen. Es lädt also nicht den Textstring: `Die Tür hat eine Klinke.` von irgendwoher und gibt ihn zurück. Sondern es berechnet zunächst, dass `Die` das wahrscheinlichste erste Token der Antwort ist. Danach berechnet es ein wahrscheinlich passendes nächstes Token: `Tür`, und so weiter, bis die Antwort fertig ist: `Die Tür hat eine Klinke`.
 
 Der generelle Ablauf ist also ungefähr so:
 
@@ -157,9 +155,9 @@ Die Datei besteht aus zwei Hauptkomponenten:
 1. Die interne Embedding-Matrix: das Vokabelheft, das jedem Wort-Token einen festen (Start-)Vektor zuordnet.
 2. Die Gewichte bzw. Parameter: das sind Milliarden von mathematischen Zahlen. *"Diese Zahlen steuern, wie die Vektoren auf ihrem Weg durch das Netzwerk miteinander verrechnet werden."* ¯\\\_(ツ)_/¯
 
-**Größe:** Bei einem modernen, kompakten Modell (wie Llama 3 mit 8 Milliarden Parametern) ist diese Datei etwa 16 Gigabyte groß. Bei sehr großen Modellen wie GPT-4 sind es mehrere hundert Gigabyte.  
+**Größe:** Bei einem modernen, kompakten Modell (wie Llama 3 mit 8 Milliarden Parametern) ist diese Datei etwa 16 Gigabyte groß. Bei sehr großen Modellen wie GPT-x sind es mehrere hundert Gigabyte.
 
-**Statisch:** Die trainierten Zahlen (Gewichte) bleiben im normalen Betrieb unverändert. Deshalb kennt ein LLM aus sich heraus keine Ereignisse, die nach dem Training passiert sind. Aktuelle Informationen kann es nur nutzen, wenn sie zur Laufzeit als Kontext bereitgestellt werden, z.B. über RAG oder Tool Calling (etwa eine Websuche). Diese externen Inhalte werden als Text in den Prompt eingebracht und dann vom LLM in der Antwort verarbeitet.
+**Statisch:** Die trainierten Zahlen (Gewichte) bleiben im normalen Betrieb unverändert. Deshalb kennt ein LLM aus sich heraus keine Ereignisse, die nach dem Training passiert sind. Aktuelle Informationen kann es nur nutzen, wenn sie zur Laufzeit als Kontext bereitgestellt werden, z.B. über RAG oder Tool Calling (etwa eine Websuche). Auch diese externen Inhalte werden als Text in den Prompt eingebracht, tokenisiert und dann vom LLM in der Antwort verarbeitet.
 
 ## Ende
 

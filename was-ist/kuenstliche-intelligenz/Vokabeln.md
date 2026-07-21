@@ -4,6 +4,8 @@ Technische Vokabeln, die mir beim Recherchieren zu den Themen begegnet sind und 
 
 ## Backpropagation
 
+## Beam/Greedy Search
+
 ## Deterministisch, nicht-deterministisch
 
 ## Embedding-Vektor
@@ -18,8 +20,12 @@ Technische Vokabeln, die mir beim Recherchieren zu den Themen begegnet sind und 
 
 ## Semantik, semantisch
 
+## Temperature
+
 ## Token
 
 ## Token-ID
+
+## Top-p
 
 ## Transformer
