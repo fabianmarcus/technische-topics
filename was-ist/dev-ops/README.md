@@ -10,5 +10,5 @@ Nachfolgend möchte ich Begriffe, Produkte und Herausforderungen näher beschrei
 
 | Bereich | Fokus |
 | --- | --- |
-| [CI/CD](ci-cd.md) | Grundlagen zu Continuous Integration und Continuous Deployment. |
-| [Docker](docker.md) | Container-Grundlagen, Workflows und praktische Nutzung. |
+| [CI/CD](CICD.md) | Grundlagen zu Continuous Integration und Continuous Deployment. |
+| [Docker](Docker.md) | Container-Grundlagen, Workflows und praktische Nutzung. |

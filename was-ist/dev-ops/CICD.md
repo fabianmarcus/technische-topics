@@ -32,5 +32,6 @@ Produkte mit denen ich zuletzt Pipelines angelegt habe, um ein Deployment zu aut
 
 - GitHub Actions
 - GitLab CI/CD
+- Eigenes lokales Bash-Skript
 
 Im Fall einer ImmoScout24-Extension liefert die Deployment Pipeline in GitHub Actions ein neues GitHub Release automatisch in alle gängigen Browser-Stores aus.
