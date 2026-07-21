@@ -1,4 +1,3 @@
-
 # ARIA Attribute
 
 ## Was ist es?
@@ -28,7 +27,7 @@ So wird aus einem Div semantisch ein Button:
 <div role="button">Speichern</div>
 
 <!-- Das native „button“-Element ist aber immer vorzuziehen! -->
- <button>Speichern</button>
+<button>Speichern</button>
 ```
 
 So wird einer assistiven Technologie mitgeteilt, dass ein Element eine Fortschrittsanzeige ist:
