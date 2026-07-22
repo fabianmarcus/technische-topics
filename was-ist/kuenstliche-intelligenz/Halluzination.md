@@ -28,7 +28,7 @@ Wie gut das LLM richtige Antworten gibt bzw. wie häufig es halluziniert, hängt
 
 Wenn das LLM auf umfassenden, qualitativ hochwertigen Daten trainiert wurde, die viele korrekte Informationen enthalten, ist die Wahrscheinlichkeit geringer, dass es halluziniert. Wenn die Trainingsdaten jedoch zu gering, fehlerhaft oder ungenau sind, wird das LLM diese Fehler häufig als Wahrheit wiedergeben. Es denkt, es sagt die Wahrheit, ist in Wahrheit aber falsch informiert; was nichts anderes als eine Halluzination ist.
 
-Halluzinationen entstehen aber nicht nur durch schlechte Trainingsdaten, sondern auch durch Zielkonflikte wie „plausibel formulieren“ vs. „Unsicherheit offen zugeben“
+Halluzinationen entstehen aber nicht nur durch schlechte Trainingsdaten, sondern auch durch Zielkonflikte wie „plausibel formulieren“ vs. „Unsicherheit offen zugeben“.
 
 ### Trainingsverfahren
 
