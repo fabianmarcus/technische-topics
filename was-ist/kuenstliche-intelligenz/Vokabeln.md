@@ -12,6 +12,8 @@ Technische Vokabeln, die mir beim Recherchieren zu den Themen begegnet sind und 
 
 ## Embedding-Matrix
 
+## Fine-Tuning
+
 ## Gewicht, Gewichtung
 
 ## Inferenz (Vorhersage)
