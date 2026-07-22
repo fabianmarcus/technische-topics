@@ -49,6 +49,8 @@ Im unteren Code Beispiel gehören dazu vor allem `runAgent()`, `executeAction()`
 
 Zum Harness gehören neben direkten Agenten-Funktionalitäten wie Loop, Zustand und Abbruchbedingungen auch vor- oder nachgelagerte Tools wie OCR, Websuche, Markdown-Interpreter, API-Client, Dateileser und Ähnliches. Also alles, was der Agent für seine Arbeit benötigt, aber nicht direkt zu seiner Entscheidungslogik gehört.
 
+Bildliches Beispiel: Zwei Personen. Eine Person trägt ein kabelloses Headset im Ohr. Die andere Person kann ihr darüber Anweisungen geben, was sie als nächstes sagen oder tun soll. Die Person mit dem Headset ist quasi der Harness bzw. das Agent-System. Die andere Person ist der Agent-Kern, also die Entscheidungslogik. Sie kann nur sagen, was als nächstes passieren soll, aber nicht selbst handeln, dafür braucht sie die andere Person.
+
 ## Eigene Erfahrungen
 
 Bislang habe ich Agenten nur transparent über Benutzeroberflächen genutzt. Beruflich wie privat arbeite ich viel mit GitHub Copilot für VS Code. Das Prompten von Features bzw. das hinein generieren lassen von Code in die Codebasis ist ein klassischer Fall für Agentensysteme.

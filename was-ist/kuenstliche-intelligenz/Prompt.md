@@ -20,6 +20,8 @@ Da ein Prompt grundsätzlich nichts anderes ist, als eine Anweisung in natürlic
 
 Im Zeitalter der Agenten und der multimodalen Modelle ist das Missbrauchspotenzial noch größer geworden. Innerhalb eines Agentensystems kann das Modell nicht nur antworten, sondern auch Handlungen ausführen lassen, wie zum Beispiel das Ausführen von Code oder Betriebssystembefehlen, das Versenden von E-Mails oder das Manipulieren von Bild- und Videoinhalten. Ein großes Modell kann dabei auf umfangreiches Wissen zugreifen, um so ein Ziel zu erreichen.
 
+Bildlich gesprochen: Zwei Personen. Eine Person trägt ein kabelloses Headset im Ohr. Die andere Person kann ihr darüber Anweisungen geben, was sie als nächstes sagen oder tun soll. Die Person mit dem Headset ist in diesem Fall das Modell bzw. Agentensystem. Die andere Person ist der Benutzer, der nun über Sprache (das Prompt) alle möglichen Anweisungen geben kann. Ohne Sicherheitsmechanismen kann der Benutzer das Modell dazu bringen, Dinge zu tun, die es nicht tun sollte. Das kann von harmlosen Scherzen bis hin zu kriminellen Handlungen reichen. Kurzum: es würde in Mord und Totschlag enden.
+
 Um dem entgegen zu wirken, wurden von KI-Entwicklern drei Sicherheitssäulen etabliert, die das Missbrauchspotenzial reduzieren sollen:
 
 1. **Safety-Policies (Richtlinien)**: Die Richtlinien definieren überhaupt erst, dass das Umgehen von Systemregeln oder das Ausführen fremder Befehle ("Ignore previous instructions") nicht erlaubt ist.
