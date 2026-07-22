@@ -18,6 +18,8 @@ Technische Vokabeln, die mir beim Recherchieren zu den Themen begegnet sind und 
 
 ## Optimizer (Trainingsprogramm)
 
+## Prompting Template
+
 ## Semantik, semantisch
 
 ## Temperature
