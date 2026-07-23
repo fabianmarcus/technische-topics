@@ -46,7 +46,7 @@ Gefährlich sind auch Widersprüche zwischen System-, Entwickler- und Nutzeranwe
 
 ### Kontext und Hintergrundinformationen
 
-Wenn das LLM über ausreichenden Kontext verfügt, um die Anfrage zu verstehen, ist die Wahrscheinlichkeit geringer, dass es halluziniert. Wenn jedoch wichtige Informationen fehlen oder der Kontext unklar ist, kann das Modell dazu neigen, falsche oder erfundene Antworten zu generieren. Deshalb ist RAG und [Tool Calling](./MCP.md) so wichtig, um dem LLM die Möglichkeit zu geben, auf individuelle und aktuelle Informationen zuzugreifen. Wobei auch hier darauf zu achten ist, dass ordentliche, verlässliche RAG-Quellen vorliegen und die MCP-Tools so definiert sind, dass tatsächlich das richtige Tool für die jeweilige Anfrage aufgerufen wird. Ansonsten endet auch das in Halluzinationen.
+Wenn das LLM über ausreichend passenden Kontext verfügt, um die Anfrage zu verstehen, ist die Wahrscheinlichkeit geringer, dass es halluziniert. Wenn jedoch wichtige Informationen fehlen oder der Kontext falsch ist, kann das Modell dazu neigen, falsche oder erfundene Antworten zu generieren. Deshalb ist RAG und [Tool Calling](./MCP.md) so wichtig, um dem LLM die Möglichkeit zu geben, auf individuelle und aktuelle Informationen zuzugreifen. Wobei auch hier darauf zu achten ist, dass ordentliche, verlässliche RAG-Quellen vorliegen und die MCP-Tools so definiert sind, dass tatsächlich das richtige Tool für die jeweilige Anfrage aufgerufen wird. Ansonsten endet auch das in Halluzinationen.
 
 ## Eigene Erfahrungen
 
@@ -62,10 +62,10 @@ Auch tückisch ist, wenn das LLM, wie es Menschen auch tun, zwar korrekt auf ein
 
 So fühlt man sich gleich mit der ersten Antwort gut informiert, weiß aber nicht, dass das nur die halbe Wahrheit war (oder gar keine). Zudem hängt die Ausführlichkeit der Antwort auch stark vom verwendeten Modell ab. Wer wirklich umfangreich über ein Thema informiert werden möchte, sollte das LLM gezielt nach weiteren Details fragen und ein Modell mit großem Kontextfenster verwenden, damit die Antwort etwas länger ausfallen darf.
 
-Bei unwichtigen Themen ist das nicht so schlimm, aber bei wichtigen Themen kann man sich ein bisschen absichern:
+Bei unwichtigen Themen ist das nicht so schlimm, bei wichtigen Themen sollte man sich aber ein bisschen absichern:
 
 - Im Prompt angeben, dass für die Antwort zuvor eine Websuche durchgeführt werden soll.
-- Im Prompt angeben, dass die Antwort mit Quellenangaben versehen werden soll, damit man weiß, woher die Informationen stammen und man die Antwort selbst überprüfen kann.
+- Im Prompt angeben, dass die Antwort mit Quellenangaben versehen werden soll, damit klar ist, woher die Informationen stammen und überprüft werden können.
 - Zusätzlich eine eigene Recherche via traditioneller Suchmaschine durchführen, um die Antwort zu validieren.
 - Die Antwort bzw. deren Begründung gezielt auf Inkonsistenzen prüfen und diese beim LLM hinterfragen.
 - Das Prompt mehrfach mit unterschiedlicher Formulierung und Präzision ans gleiche LLM stellen.
