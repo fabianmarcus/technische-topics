@@ -14,5 +14,6 @@ Der Begriff Künstliche Intelligenz wird mittlerweile sehr undifferenziert verwe
 | [Agent](Agent.md) | Ein Agent ist ein System, das ein KI-Modell nutzt, um in mehreren Schritten auf ein Ziel hinzuarbeiten. |
 | [MCP](MCP.md) | Model-Context-Protocol, ein Protokoll, das die Kommunikation zwischen dem KI-Modell und Agenten steuert. |
 | [Ollama](Ollama.md) | Lokales Werkzeug, um Sprachmodelle über das Terminal zu verwalten und auszuführen. |
+| [SDKs](SDKs.md) | Software Development Kits und Frameworks wie Ollama SDK, LlamaIndex und LangChain zur Nutzung und Orchestrierung von KI-Modellen. |
 | [Vokabeln](Vokabeln.md) | Sammlung von Begriffen, die im Zusammenhang mit KI relevant sind. |
-| [F&A](QA.md) | Fragen & Antworten - ein Format, bei dem ich einige Fragen an Cope hier festhalte. |
+| [Q&A](QA.md) | Fragen & Antworten - ein Format, bei dem ich einige Fragen an Cope hier festhalte. |
