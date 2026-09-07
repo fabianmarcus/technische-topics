@@ -4,6 +4,12 @@ Topics, Artikel und Videos zum lernen, einarbeiten und ausprobieren.
 
 Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](/README.md)** zusammengefasst festgehalten.
 
+## Hands-On Roadmap
+
+- Higgsfield ausprobieren
+- Kleinen MCP-Server aufsetzen
+- Raspberry Pi mit n8n zum Automatisieren von Aufgaben aufsetzen
+
 ## Themen
 
 ### Künstliche Intelligenz
@@ -38,6 +44,7 @@ Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](/README.md)** zusa
 
 ### Firebase
 
+- Firebase Copilot Instructions
 - Video NetNinja
 - https://blog.openreplay.com/api-gateway-patterns-and-practices
 - Data Connect
