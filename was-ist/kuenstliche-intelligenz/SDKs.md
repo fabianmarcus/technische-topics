@@ -2,15 +2,11 @@
 
 Auszug einer Copilot Konversation...
 
-- [Ollama](https://ollama.com/)
-- [LlamaIndex](https://gpt-index.readthedocs.io/en/latest/index.html)
-- [LangChain](https://www.langchain.com/)
-
 ## Sind Ollama SDK, LangChain und LlamaIndex ungefähr das Gleiche?
 
 Nein, nur sehr grob im selben Themenfeld. Sie lösen unterschiedliche Ebenen des Problems.
 
-**Ollama SDK**  
+**[Ollama SDK](https://ollama.com/)**  
 Das SDK ist eine Schnittstelle zu Ollama. Damit sprichst du lokale Modelle an, die über Ollama laufen, zum Beispiel Llama, Mistral, Qwen oder Gemma. Es kümmert sich im Kern um Dinge wie:
 
 - Modell aufrufen
@@ -20,7 +16,7 @@ Das SDK ist eine Schnittstelle zu Ollama. Damit sprichst du lokale Modelle an, d
 
 Es ist eher ein **Client für einen Modell-Server**.
 
-**LangChain**  
+**[LangChain](https://www.langchain.com/)**  
 LangChain ist ein Framework zum Bauen von LLM-Anwendungen. Es kann Ollama als Modellanbieter verwenden, aber auch OpenAI, Anthropic, Azure OpenAI, Hugging Face und andere. Es bietet Bausteine für:
 
 - Prompt-Templates
@@ -33,7 +29,7 @@ LangChain ist ein Framework zum Bauen von LLM-Anwendungen. Es kann Ollama als Mo
 
 LangChain ist also eher ein **Orchestrierungsframework für LLM-Apps**.
 
-**LlamaIndex**  
+**[LlamaIndex](https://gpt-index.readthedocs.io/en/latest/index.html)**  
 LlamaIndex ist ebenfalls ein Framework für LLM-Anwendungen, aber mit stärkerem Fokus auf **Datenanbindung und Retrieval-Augmented Generation (RAG)**. Es hilft besonders bei:
 
 - Dokumente laden
