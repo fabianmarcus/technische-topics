@@ -146,13 +146,13 @@ Während Sampling Kollege Zufall zu Rate zieht, werden sowohl bei der Beam- als 
 
 Der Unterschied zwischen Beam und Greedy liegt in der Anzahl laufender Vorhersage-Pfade.
 
-### Greedy Search
+##### Greedy Search
 
 Die Greedy Suche (deutsch: gierige Suche) wählt als nächstes Token einfach immer das Token aus, das vom Forward Pass die höchste Wahrscheinlichkeit bekommen hat und hängt es an die aktuelle Tokensequenz. Die anderen Token mit hoher Wahrscheinlichkeit werden verworfen. Es gibt also genau eine Lösung.
 
 Greedy Search arbeitet dadurch sehr effizient und ressourcenschonend, liefert aber unzuverlässig gute Ergebnisse, da durch das Verwerfen der anderen Token keine Korrektur mehr möglich ist. Die laufende Vorhersage kann dadurch leicht in einer [Sackgasse](./Vokabeln.md#das-sackgassen-problem) enden.
 
-#### Das Sackgassen-Problem
+##### Das Sackgassen-Problem
 
 Das "Sackgassen-Problem" beschreibt die Situation, dass die Greedy Suche das wahrscheinlichste Token auswählt, die Wahrscheinlichkeiten der darauf folgenden Token aber plötzlich einbrechen. Es folgen für die momentan zusammengestellte Tokensequenz keine wirklich plausiblen Token mehr. Die Vorhersage hat sich quasi verhaspelt. Sie kann aber auch nicht mehr zurück, da der Algorithmus nur einen Vorhersage-Pfad vorsieht, andere berechnete Wahrscheinlichkeiten wurden verworfen. Es geht also einfach weiter mit der Auswahl, selbst mit sehr unwahrscheinlichen Token. Das kann zu mehreren Ergebnissen führen:
 
@@ -160,7 +160,7 @@ Das "Sackgassen-Problem" beschreibt die Situation, dass die Greedy Suche das wah
 - **Wirrwarr:** Da die Tokens immer unwahrscheinlicher werden, entsteht eine Abfolge nicht zusammenpassender Token, die grammatikalisch nur noch Kauderwelsch ergeben. (*Ich bin ein Bibabutzemann, Wald grün hat geklettert oben irgendwas...*)
 - **Halluzinationen:** Vielleicht passen die Tokens grammatikalisch noch zusammen, machen inhaltlich aber keinen Sinn mehr. (*Ich bin ein Bibabutzemann, der auf dem Mond tanzt und mit einem Staubsauger singt. Deshalb ist die Erde eine Scheibe.*)
 
-### Beam Search
+##### Beam Search
 
 Die Beam Suche (deutsch: Strahlensuche) verfolgt im Vergleich zur Greedy Suche mehrere Vorhersage-Pfade.
 
@@ -178,7 +178,7 @@ Es laufen also mehrere Vorhersage-Pfade parallel, wobei der, der am Ende die Ant
 - [Bildliche Veranschaulichung - I](https://towardsdatascience.com/wp-content/uploads/2021/04/1tEjhWqUgjX37VnT7gJN-4g-768x449.png)
 - [Bildliche Veranschaulichung - II](https://www.researchgate.net/profile/Johannes-Rieke-2/publication/374031557/figure/fig2/AS:11431281189909429@1695211392614/Beam-search-Aus-moeglichen-Token-Sequenzen-wird-die-wahrscheinlichste-Sequenz-ausgewaehlt.png)
 
-### Diagrammartig zusammengefasst
+### Der Ablauf diagrammartig zusammengefasst
 
 ```text
  [1. TEXTDATEI]     -->  „Die Tür hat eine Klinke.“
