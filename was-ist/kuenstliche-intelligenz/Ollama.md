@@ -8,7 +8,7 @@ Für mich sind die lokal laufenden Modelle, die heruntergeladen und auf dem eige
 
 In der App bzw. CLI können sowohl die heruntergeladenen Modelle als auch verschiedene Cloud-Modelle eingestellt werden. Cloud-Modelle erfordern in der Regel ein kostenpflichtiges Abo, während lokale Modelle kostenlos genutzt werden können, da sie auf dem eigenen Gerät laufen.
 
-Darüber hinaus ist [Ollama auch ein SDK](https://github.com/ollama/ollama-js), das in Node.js und Python genutzt werden kann. Damit können eigene Anwendungen auf Basis der Ollama-Modelle entwickelt werden. Weitere SDKs wie LlamaIndex oder LangChain können ebenfalls auf Ollama-Modelle zugreifen.
+Darüber hinaus ist [Ollama auch ein SDK](https://github.com/ollama/ollama-js), das in Node.js und Python genutzt werden kann. Damit können eigene Anwendungen auf Basis der Ollama-Modelle entwickelt werden. Weitere SDKs wie LlamaIndex oder LangChain können ebenfalls auf Ollama-Modelle zugreifen. ([Mehr zu den SDKs im Vergleich](SDKs.md))
 
 ## Befehle
 
