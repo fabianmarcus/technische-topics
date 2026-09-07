@@ -45,7 +45,7 @@ Hieran hat das lokale Modell zum Beispiel ziemlich rumgerödelt:
 
 ```text
 [Prompt]
-Schreibe eine Funktion ein, die eine for-Schleife von 10 Iterationen ausführt und den momentanen Index loggt.
+Schreibe eine Funktion, die eine for-Schleife von 10 Iterationen ausführt und den momentanen Index loggt.
 ```
 
 ```ts
@@ -63,26 +63,26 @@ Vom Gedanken, mit einem lokalen Modell in VS Code zu entwickeln, sollte man sich
 
 Für Chat-Anwendungen ist es aber durchaus brauchbar. Möglich ist auch, verschiedene Modelle für unterschiedliche Aufgaben hintereinander zu nutzen und jedem den Kontext des vorherigen Modells zu geben. So kann von den Stärken der einzelnen kleineren, aber spezialisierten Modelle profitiert werden, wobei die Informationsverarbeitung kostenlos und lokal auf dem eigenen Rechner stattfindet. Keine Daten gehen in die Cloud.
 
-Ein Bild, PDF oder eine Voice-Nachricht kann zum Beispiel zunächst von einem darauf spezialisierten Modell zu Text umgewandelt werden. Der Inhalt des Textes wird dann von einem anderen Modell analysiert. Die Analyse wird anschließend von einem weiteren Modell zu einem Ergebnistext verarbeitet.
+Ein Bild, PDF oder eine Voice-Nachricht kann zum Beispiel zunächst von einem darauf spezialisierten Modell zu Text umgewandelt werden. Der Inhalt des Textes wird dann von einem anderen Modell auf irgendwas spezielles analysiert. Die Analyse wird anschließend von einem weiteren Modell zu einem Ergebnistext verarbeitet.
 
 ### Möglichkeiten
 
-Aus einem Haufen von der Community erstellter Modelle auswählen zu können, bietet auch die Möglichkeit, verschiedene Modelle zu vergleichen. Wie antwortet zum Beispiel ein Modell, dessen Guardrails (so gut) wie runtergefahren sind.
+Aus einem Haufen [von der Community erstellter Modelle](#huggingface) auswählen zu können, bietet auch die Möglichkeit, verschiedene Modelle zu vergleichen. Wie antwortet zum Beispiel ein Modell, dessen Guardrails (so gut) wie runtergefahren sind.
 
 Ich habe eins ausprobiert. Es hatte keine Hemmungen, auf Fragen zu antworten, die andere Modelle ablehnen oder mit einer beschwichtigenden Antwort inklusive Hilfsangebot beantworten würden. Das zeigt, wie wichtig ein ordentliches Training frei verfügbarer Modelle ist, da in der Zukunft wahrscheinlich immer mehr Menschen mit Chatbots über ihre Probleme sprechen werden.
 
 ## HuggingFace
 
-HuggingFace ist das GitHub der KI-Community. Hier veröffentlichen Leute ihre eigens trainierten Modelle, um sie auch anderen zur Verfügung zu stellen. Nicht nur Sprachmodelle, sondern auch multimodale Modelle für Bild- und Audioinhalte. Ollama bietet einige der dort angebotenen Sprachmodelle auch in seiner [Library](https://ollama.com/library) an, aber nicht alle.
+[HuggingFace](https://huggingface.co) ist das GitHub der KI-Community. Hier veröffentlichen Leute ihre eigens trainierten Modelle, um sie auch anderen zur Verfügung zu stellen. Nicht nur Sprachmodelle, sondern auch multimodale Modelle für Bild- und Audioinhalte. Ollama bietet einige der dort angebotenen Sprachmodelle auch in seiner [Library](https://ollama.com/library) an, aber nicht alle.
 
-Ein Modell auf HuggingFace kann aber genauso heruntergeladen und lokal in Ollama ausgeführt werden - zumindest, wenn es im gguf-Format vorliegt. Dafür braucht es allerdings einen extra Konfigurationsschritt, da Ollama diese Modelle nicht direkt einspielen kann. Es muss ein sogenanntes Modelfile erstellt werden, das die Konfiguration für das Modell enthält. Der Aufwand dafür ist überschaubar.
+Ein Modell auf [HuggingFace](https://huggingface.co/models) kann aber genauso heruntergeladen und lokal in Ollama ausgeführt werden - zumindest, wenn es im gguf-Format vorliegt. Dafür braucht es allerdings einen extra Konfigurationsschritt, da Ollama diese Modelle nicht direkt einspielen kann. Es muss ein sogenanntes Modelfile erstellt werden, das die Konfiguration für das Modell enthält. Der Aufwand dafür ist überschaubar.
 
 ### Anleitung
 
-- **Schritt A:** Das Modell herunterladen
+- **Schritt A:** Das Modell herunterladen  
 Auf Hugging Face nach einem Modell im GGUF-Format suchen, die gewünschte Datei (z. B. mein-modell.gguf) herunterladen und in einem passenden Ordner ablegen.
 
-- **Schritt B:** Ein Modelfile erstellen
+- **Schritt B:** Ein Modelfile erstellen  
 In demselben Ordner, in dem die .gguf-Datei liegt, eine neue Textdatei erstellen und sie einfach *Modelfile* nennen (ohne Dateiendung wie .txt). In die Datei wird folgendes eingefügt:
 
 ```bash
@@ -96,7 +96,7 @@ SYSTEM "Du bist ein hilfreicher Assistent, der auf Deutsch antwortet."
 PARAMETER temperature 0.7
 ```
 
-- **Schritt C:** Das Modell in Ollama registrieren
+- **Schritt C:** Das Modell in Ollama registrieren  
 Ollama mit folgendem Terminal-Befehl mitteilen, dass es dieses Modelfile als neues Modell behandeln soll:
 
 ```bash
@@ -104,7 +104,7 @@ Ollama mit folgendem Terminal-Befehl mitteilen, dass es dieses Modelfile als neu
 ollama create mein-neues-modell -f Modelfile
 ```
 
-- **Schritt D:** Das Modell nutzen
+- **Schritt D:** Das Modell nutzen  
 Sobald der Vorgang abgeschlossen ist, kann das Modell in Ollama genutzt werden.
 
 ```bash
