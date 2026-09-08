@@ -135,6 +135,8 @@ Aus diesem Ausschnitt wird dann das nächste Token per gewichtetem Zufall (Weigh
 
 Diese Zufallsauswahl, aus einem zuvor bestimmten Ausschnitt aller Tokens, ist die eigentliche Vorhersage (Inferenz) des nächsten Tokens. Das LLM berechnet also nicht das wahrscheinlichste nächste Token, sondern es berechnet die Wahrscheinlichkeiten aller Tokens, sortiert sie, grenzt anschließend die Auswahl ein und wählt daraus letztlich per Zufall eines aus.
 
+![Veranschaulichendes Diagramm: Sampling](../../assets/sampling.svg)
+
 #### Suche (Beam & Greedy)
 
 Als Alternative zum Sampling (siehe oben) kann das nächste Token auch per Suche ausgewählt werden.
@@ -150,6 +152,8 @@ Der Unterschied zwischen Beam und Greedy liegt in der Anzahl laufender Vorhersag
 Die Greedy Suche (deutsch: gierige Suche) wählt als nächstes Token einfach immer das Token aus, das vom Forward Pass die höchste Wahrscheinlichkeit bekommen hat und hängt es an die aktuelle Tokensequenz. Die anderen Token mit hoher Wahrscheinlichkeit werden verworfen. Es gibt also genau eine Lösung.
 
 Greedy Search arbeitet dadurch sehr effizient und ressourcenschonend, liefert aber unzuverlässig gute Ergebnisse, da durch das Verwerfen der anderen Token keine Korrektur mehr möglich ist. Die laufende Vorhersage kann dadurch leicht in einer [Sackgasse](./Vokabeln.md#das-sackgassen-problem) enden.
+
+![Veranschaulichendes Diagramm: Greedy Search](../../assets/greedy-search.svg)
 
 ##### Das Sackgassen-Problem
 
@@ -174,7 +178,7 @@ Das funktioniert ungefähr so:
 
 Es laufen also mehrere Vorhersage-Pfade parallel, wobei der, der am Ende die Antwort bilden soll, von Durchlauf zu Durchlauf wechseln kann. Dadurch ist die Beam Suche wesentlich robuster als die Greedy Suche, arbeitet aber auch langsamer und benötigt mehr Rechenleistung und Speicher. Das Sackgassen-Problem kann bei der Beam Suche zwar auch auftreten, die Wahrscheinlichkeit ist aber wesentlich geringer, da mehrere Vorhersage-Pfade parallel laufen. Wenn ein Pfad in einer Sackgasse endet, können die anderen Pfade trotzdem noch plausibel weiterlaufen.
 
-- [Bildliche Veranschaulichung für Beam Search Algorithmus](https://www.researchgate.net/profile/Johannes-Rieke-2/publication/374031557/figure/fig2/AS:11431281189909429@1695211392614/Beam-search-Aus-moeglichen-Token-Sequenzen-wird-die-wahrscheinlichste-Sequenz-ausgewaehlt.png)
+![Veranschaulichendes Diagramm: Beam Search](../../assets/beam-search.svg)
 
 ### Der Ablauf diagrammartig zusammengefasst
 

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">Greedy Search</title>
+  <desc id="desc">Greedy Search verfolgt pro Schritt nur den aktuell besten Token-Pfad und verwirft alle anderen Kandidaten.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" /></marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" /></marker>
+    <style>
+      .bg{fill:#0b1120}.title{fill:#f8fafc;font:700 24px ui-sans-serif,system-ui,sans-serif}.subtitle{fill:#cbd5e1;font:400 15px ui-sans-serif,system-ui,sans-serif}.node{fill:#1f2937;stroke:#38bdf8;stroke-width:2;rx:10}.muted{fill:#111827;stroke:#64748b;stroke-width:2;stroke-dasharray:6 6;rx:10}.result{fill:#064e3b;stroke:#34d399;stroke-width:2;rx:10}.label{fill:#f8fafc;font:700 15px ui-sans-serif,system-ui,sans-serif;text-anchor:middle}.score{fill:#cbd5e1;font:400 13px ui-sans-serif,system-ui,sans-serif;text-anchor:middle}.muted-label{fill:#94a3b8;font:700 15px ui-sans-serif,system-ui,sans-serif;text-anchor:middle}.muted-score{fill:#64748b;font:400 13px ui-sans-serif,system-ui,sans-serif;text-anchor:middle}.edge{stroke:#38bdf8;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.edge-muted{stroke:#64748b;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow-muted)}.step{fill:#94a3b8;font:700 12px ui-sans-serif,system-ui,sans-serif;text-anchor:middle;letter-spacing:.08em}
+    </style>
+  </defs>
+  <rect class="bg" width="920" height="420" />
+  <text class="title" x="40" y="46">Greedy Search</text>
+  <text class="subtitle" x="40" y="72">Pro Durchlauf bleibt nur der beste Kandidat aktiv. Alle Alternativen werden sofort verworfen.</text>
+  <text class="step" x="100" y="120">START</text><text class="step" x="300" y="120">SCHRITT 1</text><text class="step" x="520" y="120">SCHRITT 2</text><text class="step" x="740" y="120">SCHRITT 3</text>
+  <rect class="node" x="42" y="178" width="116" height="64" /><text class="label" x="100" y="204">&lt;s&gt;</text><text class="score" x="100" y="226">Start</text>
+  <rect class="node" x="242" y="150" width="116" height="64" /><text class="label" x="300" y="176">der</text><text class="score" x="300" y="198">Bewertung: -0,4</text>
+  <rect class="muted" x="242" y="238" width="116" height="64" /><text class="muted-label" x="300" y="264">ein</text><text class="muted-score" x="300" y="286">verworfen</text>
+  <rect class="node" x="462" y="150" width="116" height="64" /><text class="label" x="520" y="176">der Hund</text><text class="score" x="520" y="198">Bewertung: -0,9</text>
+  <rect class="muted" x="462" y="238" width="116" height="64" /><text class="muted-label" x="520" y="264">der Baum</text><text class="muted-score" x="520" y="286">verworfen</text>
+  <rect class="result" x="666" y="150" width="148" height="64" /><text class="label" x="740" y="176">der Hund läuft</text><text class="score" x="740" y="198">Ausgabe</text>
+  <rect class="muted" x="666" y="238" width="148" height="64" /><text class="muted-label" x="740" y="264">der Hund schläft</text><text class="muted-score" x="740" y="286">verworfen</text>
+  <path class="edge" d="M158 199 C190 190 210 184 242 182" /><path class="edge-muted" d="M158 221 C190 250 210 266 242 270" /><path class="edge" d="M358 182 C395 182 425 182 462 182" /><path class="edge-muted" d="M358 198 C395 236 425 270 462 270" /><path class="edge" d="M578 182 C612 182 632 182 666 182" /><path class="edge-muted" d="M578 198 C612 236 632 270 666 270" />
+  <rect x="226" y="332" width="588" height="44" fill="#172033" stroke="#38bdf8" stroke-width="1.5" rx="10" /><text class="subtitle" x="520" y="359" text-anchor="middle">Greedy Search entspricht einer Strahlbreite von 1.</text>
+</svg>
