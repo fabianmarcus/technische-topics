@@ -43,15 +43,15 @@ Der weitere Workflow geht ungefähr so:
 
 Was bedeuten diese ganzen Wörter...
 
-**[Tokenisierung](./Vokabeln.md#tokenisierung)** ist das Zerlegen von Text in einzelne Teile, sogenannte Tokens. 
+**[Tokenisierung](./Vokabeln.md#tokenisierung)** ist das Zerlegen von Text in einzelne Teile, sogenannte Tokens.
 
-Ein **[Token](./Vokabeln.md#token)** kann ein Wort, nur ein Teil eines Wortes oder auch nur ein Satzzeichen sein. 
+Ein **[Token](./Vokabeln.md#token)** kann ein Wort, nur ein Teil eines Wortes oder auch nur ein Satzzeichen sein.
 
 Die Tokenisierung erfolgt durch den sogenannten **[Tokenizer](./Vokabeln.md#tokenizer)**. Der Tokenizer selbst muss auch trainiert oder konfiguriert werden, damit er aus den Trainingsdaten ein immer gleiches Vokabular ableiten kann. Dazu wird ihm ein individueller Algorithmus hinterlegt. Das Vokabular für einen Textdatensatz ist nur pro Tokenizer immer gleich. Unterschiedlich eingestellte Tokenizer ergeben unterschiedliche Vokabulare. Das Training des Tokenizers erfolgt vor dem Training des LLMs auf Basis der Trainingsdaten.
 
 [Online Tokenizer zum Ausprobieren](https://tiktokenizer.vercel.app/?model=gpt-3.5-turbo)
 
-#### Simples Beispiel
+**Simples Beispiel:**
 
 ```text
 Der Türrahmen ist aus Holz.
@@ -103,9 +103,9 @@ Der Ablauf ist ungefähr so:
 5. Das LLM versucht, die fehlenden Tokens vorherzusagen und die Sequenz wieder zu vervollständigen
 6. Das Trainingsprogramm vergleicht die Vorhersage des LLMs mit dem tatsächlichen, zuvor abgeschnittenen Token
 7. Das Trainingsprogramm berechnet die Abweichung (Fehler, Loss, [Backpropagation](./Vokabeln.md#backpropagation)) der Vorhersage
-8. Das Trainingsprogramm passt die Einstellung (Embeddings, [Gewichte](./Vokabeln.md#gewicht-gewichtung)) des LLMs an, um die Vorhersage zu verbessern
+8. Das Trainingsprogramm passt die Einstellung ([Embeddings](./Vokabeln.md#embedding-vektor), [Gewichte](./Vokabeln.md#gewicht-gewichtung)) des LLMs an, um die Vorhersage zu verbessern
 
-Dieser Prozess wird viele Millionen Mal für sehr viele tokenisierte Textausschnitte wiederholt, bis das LLM die Vorhersage des nächsten Tokens in den Trainingsausschnitten ausreichend beherrscht oder das Budget alle ist. Dann ist das LLM fertig trainiert und kann für die Vorhersage ([Inferenz](./Vokabeln.md#inferenz-vorhersage)) genutzt werden.
+Dieser Prozess wird viele Millionen Male für sehr viele tokenisierte Textausschnitte wiederholt, bis das LLM die Vorhersage des nächsten Tokens in den Trainingsausschnitten ausreichend beherrscht oder das Budget alle ist. Dann ist das LLM fertig trainiert und kann für die Vorhersage ([Inferenz](./Vokabeln.md#inferenz-vorhersage)) genutzt werden.
 
 ### Antwortgenerierung durch Vorhersage (Inferenz)
 
