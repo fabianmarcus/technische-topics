@@ -43,12 +43,11 @@ Der weitere Workflow geht ungefähr so:
 
 Was bedeuten diese ganzen Wörter...
 
-### [Tokens](./Vokabeln.md#token), [Tokenisierung](./Vokabeln.md#tokenisierung)
+**[Tokenisierung](./Vokabeln.md#tokenisierung)** ist das Zerlegen von Text in einzelne Teile, sogenannte Tokens. 
 
-**Tokenisierung** ist das Zerlegen von Text in einzelne Teile.  
-**Ein Token** kann ein Wort, nur ein Teil eines Wortes oder auch nur ein Satzzeichen sein.
+Ein **[Token](./Vokabeln.md#token)** kann ein Wort, nur ein Teil eines Wortes oder auch nur ein Satzzeichen sein. 
 
-***[Tokenizer](./Vokabeln.md#tokenizer):*** Die Tokenisierung erfolgt durch den sogenannten *Tokenizer*. Der Tokenizer selbst muss auch trainiert oder konfiguriert werden, damit er aus den Trainingsdaten ein immer gleiches Vokabular ableiten kann. Dazu wird ihm ein individueller Algorithmus hinterlegt. Das Vokabular für einen Textdatensatz ist nur pro Tokenizer immer gleich. Unterschiedlich eingestellte Tokenizer ergeben unterschiedliche Vokabulare. Das Training des Tokenizers erfolgt vor dem Training des LLMs auf Basis der Trainingsdaten.
+Die Tokenisierung erfolgt durch den sogenannten **[Tokenizer](./Vokabeln.md#tokenizer)**. Der Tokenizer selbst muss auch trainiert oder konfiguriert werden, damit er aus den Trainingsdaten ein immer gleiches Vokabular ableiten kann. Dazu wird ihm ein individueller Algorithmus hinterlegt. Das Vokabular für einen Textdatensatz ist nur pro Tokenizer immer gleich. Unterschiedlich eingestellte Tokenizer ergeben unterschiedliche Vokabulare. Das Training des Tokenizers erfolgt vor dem Training des LLMs auf Basis der Trainingsdaten.
 
 [Online Tokenizer zum Ausprobieren](https://tiktokenizer.vercel.app/?model=gpt-3.5-turbo)
 
@@ -175,8 +174,7 @@ Das funktioniert ungefähr so:
 
 Es laufen also mehrere Vorhersage-Pfade parallel, wobei der, der am Ende die Antwort bilden soll, von Durchlauf zu Durchlauf wechseln kann. Dadurch ist die Beam Suche wesentlich robuster als die Greedy Suche, arbeitet aber auch langsamer und benötigt mehr Rechenleistung und Speicher. Das Sackgassen-Problem kann bei der Beam Suche zwar auch auftreten, die Wahrscheinlichkeit ist aber wesentlich geringer, da mehrere Vorhersage-Pfade parallel laufen. Wenn ein Pfad in einer Sackgasse endet, können die anderen Pfade trotzdem noch plausibel weiterlaufen.
 
-- [Bildliche Veranschaulichung - I](https://towardsdatascience.com/wp-content/uploads/2021/04/1tEjhWqUgjX37VnT7gJN-4g-768x449.png)
-- [Bildliche Veranschaulichung - II](https://www.researchgate.net/profile/Johannes-Rieke-2/publication/374031557/figure/fig2/AS:11431281189909429@1695211392614/Beam-search-Aus-moeglichen-Token-Sequenzen-wird-die-wahrscheinlichste-Sequenz-ausgewaehlt.png)
+- [Bildliche Veranschaulichung für Beam Search Algorithmus](https://www.researchgate.net/profile/Johannes-Rieke-2/publication/374031557/figure/fig2/AS:11431281189909429@1695211392614/Beam-search-Aus-moeglichen-Token-Sequenzen-wird-die-wahrscheinlichste-Sequenz-ausgewaehlt.png)
 
 ### Der Ablauf diagrammartig zusammengefasst
 
@@ -207,8 +205,8 @@ Das wirklich konkrete Large Language Model (LLM) ist also ein auf Grundlage der 
 
 Die Datei besteht aus zwei Hauptkomponenten:
 
-1. Die interne Embedding-Matrix: das Vokabelheft, das jedem Wort-Token einen festen (Start-)Vektor zuordnet.
-2. Die Gewichte bzw. Parameter: das sind Milliarden von mathematischen Zahlen. *"Diese Zahlen steuern, wie die Vektoren auf ihrem Weg durch das Netzwerk miteinander verrechnet werden."* ¯\\\_(ツ)_/¯
+1. Die interne Embedding-Matrix: Das Vokabelheft, das jedem Wort-Token einen festen (Start-)Vektor zuordnet.
+2. Die Gewichte bzw. Parameter: Das sind Milliarden von mathematischen Zahlen. *"Diese Zahlen steuern, wie die Vektoren auf ihrem Weg durch das Netzwerk miteinander verrechnet werden."* ¯\\\_(ツ)_/¯
 
 **Größe:** Bei einem modernen, kompakten Modell (wie Llama 3 mit 8 Milliarden Parametern) ist diese Datei etwa 16 Gigabyte groß. Bei sehr großen Modellen wie GPT-x sind es mehrere hundert Gigabyte.
 
