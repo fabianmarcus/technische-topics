@@ -4,17 +4,14 @@ Barrierefreiheit (engl. Accessibility, kurz a11y) in der Webentwicklung kümmert
 
 a11y ist überigens ein sogenanntes Numeronym, das die 11 Buchstaben zwischen dem ersten und letzten Buchstaben des Wortes "Accessibility" repräsentiert. Kurzum: a11y = Accessibility.
 
-## Grundlagen in 13 Tagen
+## Inhalt
 
-Eine gute Übersicht zu den Grundlagen der Barrierefreiheit in der Webentwicklung bietet der 13-Tage-a11y-Kalender von Kasey Bonifacio:
-
-[http://a11ycalendar.kaseybon.com/](http://a11ycalendar.kaseybon.com/)
-
-Eine kurze Info pro Tag reicht, um nach 13 Tagen eine fundierte Basis zu den Kriterien einer barrierefreien Webanwendung zu haben. Darin ist auch leicht ersichtlich, was eine Webanwendung erfüllen muss, um ein bestimmtes A-11y-Level zu erreichen. Die Levels sind in A, AA und AAA unterteilt - in Anlehnung an die WCAG (Web Content Accessibility Guidelines von der W3C). Die Informationen beziehen sich allerdings auf die WCAG 2.1. Mittlerweile gibt es auch die WCAG 2.2, die einige neue Kriterien enthält.
-
-Auch dieser Blogartikel gibt einen guten Überblick zu den essentiellen Grundlagen der Barrierefreiheit für Frontend-Entwickler:
-
-[https://martijnhols.nl/blog/accessibility-essentials-every-front-end-developer-should-know](https://martijnhols.nl/blog/accessibility-essentials-every-front-end-developer-should-know)
+| Bereich | Fokus |
+| --- | --- |
+| [ARIA Attribute](ARIA.md) | Rollen, Zustände und Eigenschaften für assistive Technologien. |
+| [BFSG](BFSG.md) | Rechtlicher Rahmen für digitale Barrierefreiheit in Deutschland. |
+| [Semantik HTML](HTML.md) | Native HTML-Elemente als Grundlage barrierefreier Weboberflächen. |
+| [WCAG](WCAG.md) | Richtlinien und Erfolgskriterien für barrierefreie Webinhalte. |
 
 ## Eigene Erfahrungen
 
