@@ -6,48 +6,15 @@ a11y ist überigens ein sogenanntes Numeronym, das die 11 Buchstaben zwischen de
 
 ## Grundlagen in 13 Tagen
 
-Eine gute Übersicht zu den Grundlagen der Barrierefreiheit in der Webentwicklung bietet der 13-tägige a11y-Kalender von Kasey Bonifacio:
+Eine gute Übersicht zu den Grundlagen der Barrierefreiheit in der Webentwicklung bietet der 13-Tage-a11y-Kalender von Kasey Bonifacio:
 
 [http://a11ycalendar.kaseybon.com/](http://a11ycalendar.kaseybon.com/)
 
-Eine kurze Info pro Tag reicht, um nach 13 Tagen eine fundierte Basis zu den Kriterien einer barrierefreien Webanwendung zu haben.
-
-Darin ist auch leicht ersichtlich, was eine Webanwendung erfüllen muss, um ein bestimmtes A-11y-Level zu erreichen. Die Levels sind in A, AA und AAA unterteilt - in Anlehnung an die WCAG (Web Content Accessibility Guidelines von der W3C).
+Eine kurze Info pro Tag reicht, um nach 13 Tagen eine fundierte Basis zu den Kriterien einer barrierefreien Webanwendung zu haben. Darin ist auch leicht ersichtlich, was eine Webanwendung erfüllen muss, um ein bestimmtes A-11y-Level zu erreichen. Die Levels sind in A, AA und AAA unterteilt - in Anlehnung an die WCAG (Web Content Accessibility Guidelines von der W3C). Die Informationen beziehen sich allerdings auf die WCAG 2.1. Mittlerweile gibt es auch die WCAG 2.2, die einige neue Kriterien enthält.
 
 Auch dieser Blogartikel gibt einen guten Überblick zu den essentiellen Grundlagen der Barrierefreiheit für Frontend-Entwickler:
 
 [https://martijnhols.nl/blog/accessibility-essentials-every-front-end-developer-should-know](https://martijnhols.nl/blog/accessibility-essentials-every-front-end-developer-should-know)
-
-## Semantik HTML
-
-Die Verwendung von semantischem HTML ist mehr als die halbe Miete für die Barrierefreiheit einer Webanwendung. Das korrekte Verwenden von HTML-Elementen, die die Bedeutung und Struktur des Inhalts widerspiegeln, ermöglicht es assistiven Technologien, den Inhalt besser zu interpretieren und den Benutzern eine bessere Erfahrung zu bieten.
-
-Assistive Technologien wie Screenreader sind darauf optimiert, semantisches HTML zu erkennen und zu interpretieren. Wenn Entwickler die richtigen HTML-Elemente verwenden, können Screenreader den Inhalt korrekt vorlesen und den Benutzern eine klare Vorstellung von der Struktur und Bedeutung der Seite vermitteln.
-
-Nur in bestimmten Fällen, in denen semantisches HTML nicht ausreicht, um die gewünschte Funktionalität zu erreichen, sollten [ARIA-Attribute](ARIA.md) verwendet werden.
-
-```html
-<!-- Semantisches HTML bzw. native Elemente statt ARIA Rollen -->
-
-<!--
-Statt eines EventListeners (z.B. `click`) auf ein <div role="button"> zu setzen,
-lieber einfach die korrekten nativen Elemente dafür benutzen.
--->
-<a href="#" title="Details">Link</a>
-<button>Speichern</button>
-
-<!--
-Statt eines <div role="form"> zu verwenden,
-lieber das native <form>-Element benutzen.
--->
-<form action="/submit" method="post">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name">
-  <input type="submit" value="Absenden">
-</form>
-
-<!-- usw. -->
-```
 
 ## Eigene Erfahrungen
 
