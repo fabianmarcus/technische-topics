@@ -14,5 +14,7 @@ In dieser Sektion möchte ich die Begriffe, Technologien und Probleme (in Form f
 | [Next.js](React.Nextjs.md) | React-Framework für Rendering, Routing und Fullstack-Webanwendungen. |
 | [Angular](Angular.md) | Grundlagen und praktische Notizen zum Angular-Framework. |
 | [Vue.js](Vue.md) | Praktische Notizen zum Vue-Framework im Vergleich zu React und Angular. |
+| [Nuxt.js](Vue.Nuxt.md) | Vue-Framework für Routing, Rendering und Fullstack-Webanwendungen. |
 | [Bundling](Bundling.md) | Build-Prozesse, Bündelung und Auslieferung von Frontend-Code. |
+| [npm](npm.md) | Package Manager, Workspaces und praktische Learnings im JavaScript-Ökosystem. |
 | [Extensions](Extensions.md) | Browser- und Editor-Extensions im Frontend-Kontext. |
