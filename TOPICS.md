@@ -6,9 +6,9 @@ Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](/README.md)** zusa
 
 ## Hands-On Roadmap
 
-- Higgsfield ausprobieren
 - Kleinen MCP-Server aufsetzen
 - Raspberry Pi mit n8n zum Automatisieren von Aufgaben aufsetzen
+- ✅ Higgsfield ausprobieren *(Nur Freetokens mit Nonsense verbraucht. Später mehr, recht teuer.)*
 
 ## Themen
 
@@ -18,20 +18,18 @@ Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](/README.md)** zusa
 - Was ist: Attention (Self Attention, Cross Attention, Multi Head Attention)
 - Was ist: Agentic Frontier
 - Was ist: Quantisierung
-- [Design.md](https://stitch.withgoogle.com/docs/design-md/overview)
-- Self Hosted LLM (Ollama)
 - Spec Driven Dev mit OpenSpec
 - TDD mit Copilot
 - KI - Produktübersicht
-- Onyx (RAG)
-- Higgsfield
+- ✅ Self hosted Onyx (RAG) *(damit es Sinn macht, müsste ein lokales Modell genutzt werden. Kein ausreichendes Gerät zur Verfügung.)*
+- ✅ Self Hosted LLM (Ollama) *(lokal auf Mac ausprobiert. Für eigene dedizierte Workstation kein ausreichendes Gerät zur Verfügung.)*
 
 ### React / Next.js
 
-- Was ist: *useSyncExternalStore*
 - [SWR](https://swr.vercel.app/docs/mutation)
 - https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
 - [Playwright Agent Testing](https://playwright.dev/docs/test-agents)
+- ✅ Was ist: *useSyncExternalStore*
 
 ### Angular
 
@@ -44,18 +42,19 @@ Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](/README.md)** zusa
 
 ### Firebase
 
-- Firebase Copilot Instructions
 - Video NetNinja
 - https://blog.openreplay.com/api-gateway-patterns-and-practices
 - Data Connect
 - Firebase MCP
+- ✅ Firebase AI
+- ✅ Firebase Copilot Instructions
 
 ### Web Accessibility
 
-- Lighthouse in chrome dev tools
-- Axe / Wave
-- Webaim.org
-- Whocanuse
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/) in chrome dev tools
+- [Axe](https://www.deque.com/axe/) / [Wave](https://wave.webaim.org/)
+- [Webaim.org](https://webaim.org/)
+- [Whocanuse](https://whocanuse.com/)
 
 ### DevOps / Automatisierung
 
