@@ -2,6 +2,8 @@
 
 [Rules of React](https://react.dev/reference/rules)
 
+Ich habe React, Angular und Vue ausprobiert. React gefällt mir soweit am besten. Ich mag die Nähe zum nativen Code in JSX (ohne extra template engine). Und ich mag funktionale und modulorientierte Programmierung. React hat auch Schwachstellen und Brain Fucks, aber alles in allem ist es für mich die persönlich beste Wahl.
+
 ## React Compiler
 
 Der React Compiler ist in React 18 eingeführt worden. Er ist zurzeit noch optional, wird aber irgendwann Pflicht sein. Er ist bereits gut getestet und bei Meta produktiv im Einsatz. Der Compiler ist im Prinzip ein Babel Plugin, das den eigentlichen Compiler ummantelt. Er läuft mit allen gängigen Build Tools und wird während der Build Time ausgeführt.
@@ -38,12 +40,16 @@ Ein [React Context](https://react.dev/reference/react/createContext) ist ein Rea
 
 Das Einrichten ist manchmal etwas verwirrend, einmal eingerichtet ist er aber einfach zu nutzen. Der Context kann auch in Custom Hooks genutzt werden, um den State zu kapseln und die Nutzung zu vereinfachen. Eine Änderung eines States im Context führt auch hier wie gewohnt zu einem Rerendering der Komponenten, die den Context nutzen.
 
-### Rerendering
+### useSyncExternalStore
+
+`useSyncExternalStore` ist ein spezieller Hook, der es erleichtert, *externe* Datenquellen, die außerhalb des React Kontextes liegen, auf Veränderungen hin zu überwachen. Einfache Beispiele für externe Stores sind der *localStorage* oder das *window*-Objekt des Browsers. Es kann sich aber auch um gepollte REST-APIs, WebSockets oder andere externe Datenquellen handeln.
+
+Der Hook abstrahiert einfach die typische React Logik, die notwendig ist, um Daten auf Veränderungen zu überwachen und anschließend betroffene Komponenten geordnet neu zu rendern. Dadurch müssen Entwickler react-spezifische Synchronisationslogik nicht mehr selbst implementieren. Die Implementierung der Änderungsanbindung (`subscribe`-Funktion) und des momentanen Store-Zustands (`snapshot`-Funktion) bleibt aber beim Entwickler.
+
+[Mehr dazu hier: useSyncExternalStore](https://react.dev/reference/react/useSyncExternalStore)
+
+## Rerendering
 
 Rerendering ist der Prozess, bei dem React die Komponente neu rendert, die einen State Change erfahren hat, um die Änderungen in der Oberfläche widerzuspiegeln. Dabei werden auch alle abhängigen untergeordneten Komponenten neu gerendert.
 
 Das Rerendering ist eine der Hauptursachen für Performance-Probleme in React-Anwendungen. Kleine Unachtsamkeiten, wie das Vergessen von `useMemo`, `useCallback` oder einer Dependency im `useEffect`, können zu unnötigen unzähligen Rerenderings führen, die die Performance der Anwendung beeinträchtigen. Der React Compiler, ein gut eingestellter Linter und eine unterstützende IDE können hier helfen, indem sie das Rerendering optimieren und auf Fehler aufmerksam machen.
-
-### Eigene Erfahrungen
-
-Ich habe React, Angular und Vue ausprobiert. React gefällt mir soweit am besten. Ich mag die Nähe zum nativen Code in JSX (ohne extra template engine). Und ich mag funktionale und modulorientierte Programmierung. React hat auch Schwachstellen und Brain Fucks, aber alles in allem ist es für mich die persönlich beste Wahl.
