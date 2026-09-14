@@ -17,6 +17,7 @@ Technische Vokabeln, die mir beim Recherchieren zu den Themen begegnet sind und 
 | [Inferenz (Vorhersage)](#inferenz-vorhersage) | |
 | [Optimizer (Trainingsprogramm)](#optimizer-trainingsprogramm) | |
 | [Prompting Template](#prompt-template) | |
+| [Quantisierung](#quantisierung) | |
 | [Sampling](#sampling) | [Top-K](#top-k), [Top-P](#top-p), [Temperature](#temperature) |
 | [Semantik, semantisch](#semantik-semantisch) | |
 | [Token](#token) | [Tokenisierung](#tokenisierung), [Tokenizer](#tokenizer), [Token-ID](#token-id), [Beispiel](#beispiel) |
@@ -275,6 +276,17 @@ Gib als Antwort ein JSON-Objekt zurück, das die genannten Eigenschaften und die
 ```
 
 Die Platzhalter {{Platzhalter}} werden vor dem Absenden des Prompts durch die vom Benutzer gewählten Werte programmatisch ersetzt (z.B. mit *text.replace(...)*). Der Benutzer muss den Prompt also nicht selbst formulieren, sondern kann über die Eingabefelder die Werte festlegen. Das Template sorgt dafür, dass der Prompt immer in der richtigen Form an das LLM übergeben wird.
+
+</details>
+
+## Quantisierung
+
+<details>
+<summary>Quantisierung reduziert die Präzision der Modellparameter, um Speicher und Rechenleistung zu sparen.</summary>
+
+Quantisierung ist ein Verfahren, bei dem die Zahlenwerte eines Modells mit weniger Bits gespeichert werden, z. B. mit INT8 statt FP16. Dadurch sinkt der Speicherbedarf deutlich, während die Anzahl der Parameter gleich bleibt. Die Werte werden jedoch gröber dargestellt, wodurch die Modellqualität leicht sinken kann.
+
+Mehr dazu: [Quantisierung](./Quantisierung.md)
 
 </details>
 
