@@ -17,10 +17,10 @@ Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](/README.md)** zusa
 - Was ist: RAC
 - Was ist: Attention (Self Attention, Cross Attention, Multi Head Attention)
 - Was ist: Agentic Frontier
-- Was ist: Quantisierung
 - Spec Driven Dev mit OpenSpec
 - TDD mit Copilot
 - KI - Produktübersicht
+- ✅ Was ist: Quantisierung
 - ✅ Self hosted Onyx (RAG) *(damit es Sinn macht, müsste ein lokales Modell genutzt werden. Kein ausreichendes Gerät zur Verfügung.)*
 - ✅ Self Hosted LLM (Ollama) *(lokal auf Mac ausprobiert. Für eigene dedizierte Workstation kein ausreichendes Gerät zur Verfügung.)*
 
