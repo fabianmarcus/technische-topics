@@ -8,6 +8,7 @@ Der Begriff Künstliche Intelligenz wird mittlerweile sehr undifferenziert verwe
 | --- | --- |
 | [NLP](NLP.md) | Natural Language Processing, die Transformation von natürlicher Sprache in mathematische Vektoren und umgekehrt. |
 | [LLM](LLM.md) | Large Language Model, das Gehirn der KI. Der Teil, der einem wirklich verrät, wie es funktioniert. Hier geht es um [Trainingsdaten](./LLM.md#trainingsdaten), [Tokenisierung](./LLM.md#tokens-tokenisierung), [Tokens](./LLM.md#tokens-tokenisierung), [Vektoren](./LLM.md#vektorisierung), [Embeddings](./LLM.md#vektorisierung), [Gewichtungen](./LLM.md#das-llm-training), [Vorhersage (Inferenz)](./LLM.md#antwortgenerierung-durch-vorhersage-inferenz) und mehr. |
+| [Komprimierung](Komprimierung.md) | Methoden zur Reduzierung der Größe von KI-Modellen, z. B. durch [Quantisierung](./Komprimierung.md#quantisierung) oder [Downcasting](./Komprimierung.md#downcasting), um Speicherbedarf und Rechenleistung zu optimieren. |
 | [Prompt](Prompt.md) | Eingabeaufforderung, die an ein KI-Modell gesendet wird, um eine Antwort zu generieren, unterteilbar in System- und User-Prompt. |
 | [RAG](RAG.md) | Retrieval Augmented Generation, eine Methode, bei der KI-Modelle auf externe Daten zugreifen, um ihre Antworten zu verbessern. |
 | [Halluzination](Halluzination.md) | Wenn ein KI-Modell eine Antwort generiert, die nicht auf den Trainingsdaten basiert und somit faktisch falsch ist. |
