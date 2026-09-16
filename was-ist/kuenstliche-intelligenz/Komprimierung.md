@@ -65,3 +65,17 @@ Rekonstruierter Näherungswert: ungefähr 0.137
 - Mittleres Modell, z. B. 30B bis 70B: ca. 60-140 GB reine FP16-Gewichte, produktiv eher hunderte GB.
 - Großes GPT-3-Klasse-Modell, z. B. 175B: ca. 350 GB reine FP16-Gewichte, produktiv über Replikate und Caches schnell im TB-Bereich.
 - Moderne Spitzenmodelle: unbekannt, oft nicht öffentlich. Bei Mixture-of-Experts-Modellen kann die Gesamtgröße sehr groß sein, aber pro Anfrage wird nur ein Teil der Experten aktiv genutzt.
+
+## Pruning
+
+Pruning reduziert die Anzahl der Modellparameter. Dadurch sinkt der Speicherbedarf und die Rechenleistung wird effizienter genutzt.
+
+Im Gegensatz zum Downcasting und der Quantisierung werden hier die Werte komplett aus dem Vektorraum entfernt, statt sie nur ungenauer abzubilden. Es wird also tatsächlich Wissen aus dem Modell entfernt - unnützes Wissen zwar, aber dennoch Wissen. Denn da moderne, große KI-Modelle häufig stark überparametrisiert sind, enthalten sie oft mehr Verbindungen und Gewichte als sie tatsächlich benötigen. Besonders Repräsentationen ohne eigenen Inhalt (konkret z. B. "und", "der", "ist", "trotzdem", usw.) können meistens bedenkenlos entfernt werden, ohne die Modellleistung stark zu beeinträchtigen.
+
+## Wissensdestillation
+
+Wissensdestillation ist ein Verfahren, bei dem ein großes, leistungsfähiges Modell (Lehrermodell) verwendet wird, um ein kleineres Modell (Schülermodell) zu trainieren.
+
+Dabei antwortet das Lehrermodell auf eine Vielzahl von Eingaben und liefert Vorhersagen. Es antwortet allerdings nicht nur mit der Antwort, sondern auch mit den berechneten Wahrscheinlichkeiten oder Unsicherheiten der Vorhersage. Das Schülermodell passt daraufhin seine eigenen Gewichte durch [Backpropagation](./Vokabeln.md#backpropagation) so an, dass seine Vorhersagen denen des Lehrermodells möglichst nahekommen. Das Schülermodell kopiert also kein Wissen des Lehrermodells, es hat seine eigenen Gewichte - wenn auch wesentlich weniger. Vielmehr lernt es vom Lehrermodell, auf ähnliche Eingaben ähnliche Wahrscheinlichkeiten zu berechnen. Die Qualität des Schülermodells hängt demnach stark vom Lehrermodell ab, sofern es nicht noch anderweitig trainiert wird. Sind die Vorhersagen des Lehrermodells unzureichend, wirkt sich das unmittelbar auf das Schülermodell aus.
+
+Viele "Mini"-Modelle (GPT Mini...) sind so trainiert.
