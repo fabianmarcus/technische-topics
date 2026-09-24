@@ -25,7 +25,7 @@ Die gängigen CLI-Befehle:
 
 ## Erfahrung & Eindrücke
 
-Beim Herumspielen mit lokalen Modellen wird einem erst wirklich bewusst, wie viel Rechenleistung und Speicherplatz benötigt wird, um ein größeres Sprachmodell flüssig auszuführen. Insbesondere, wenn agentische Fähigkeiten wie das Generieren von Code dazu kommt.
+Beim Herumspielen mit lokalen Modellen wird einem erst wirklich bewusst, wie viel Rechenleistung und Speicherplatz benötigt wird, um ein größeres Sprachmodell flüssig auszuführen. Insbesondere, wenn agentische Fähigkeiten wie Code Generieren dazu kommen.
 
 ### Hardware
 
@@ -41,7 +41,7 @@ Das Chatten in der Ollama App mit einem größeren lokalen Modell funktioniert n
 
 Stelle ich in VS Code ein lokales Modell im Copilot Chat ein, ist die Leistung fast nicht mehr zu gebrauchen. Einfachste Code-Anweisungen dauern ewig. Häufig bricht der Prozess auch fehlerbedingt ab. Das liegt wahrscheinlich daran, dass die Extension noch viele weitere Informationen in das Kontextfenster lädt, wodurch es schnell zu groß wird und die Hardware nicht mehr hinterher kommt.
 
-Hieran hat das lokale Modell zum Beispiel ziemlich rumgerödelt:
+An dieser Aufgabe hat das lokale Modell innerhalb einer bestehenden, größeren Codebasis zum Beispiel ziemlich rumgerödelt:
 
 ```text
 [Prompt]

@@ -2,15 +2,15 @@
 
 ## Arbeitsweise eines LLMs
 
-Wie in [Was ist ein LLM?](LLM.md) beschrieben, generiert ein LLM Antworten auf Basis von Wahrscheinlichkeiten. Es **berechnet**, welches Wort (bzw. [Token](./Vokabeln.md#token)) als nächstes im Satz am wahrscheinlichsten ist, und hängt dieses an die bisherige Antwort an.
+Wie in [Was ist ein LLM?](LLM.md) beschrieben, generiert ein LLM Antworten auf Basis von Wahrscheinlichkeiten. Es **berechnet**, welches Wort (bzw. [Token](./Vokabeln.md#token)) als nächstes im Satz am wahrscheinlichsten ist und hängt dieses an die bisherige Antwort an.
 
-Es gibt also keinen feststehenden Textstring zurück wie: `Die Tür hat eine Klinke.`, der irgendwo genau so gespeichert ist. Sondern es berechnet auf Grundlage des [Prompts](./Prompt.md) zunächst, dass `Die` das wahrscheinlichste erste Token der Antwort ist. Danach berechnet es ein wahrscheinlich passendes nächstes Token: `Tür`, und so weiter, bis die Antwort fertig ist: `Die Tür hat eine Klinke`.
+Es gibt also keinen feststehenden Textstring zurück wie: `Die Tür hat eine Klinke.`, der irgendwo genau so gespeichert ist. Sondern es berechnet auf Grundlage des [Prompts](./Prompt.md) zunächst, dass `Die` das wahrscheinlichste erste Token der Antwort ist. Danach berechnet es ein wahrscheinlich passendes nächstes Token: `Tür`. So geht es weiter bis die Antwort fertig ist: `Die Tür hat eine Klinke`.
 
 ## Halluzination
 
 Wie kommt es jetzt, dass dir ein LLM voller Inbrunst ins Gesicht lügt? Das liegt daran, dass das LLM gar nicht weiß, dass es etwas Falsches sagt. Ein LLM hat in der Regel keinen festen, globalen Wissens-Schwellenwert nach dem Muster "ab X weiß ich es, darunter weiß ich es nicht". Es berechnet bei jedem Schritt nur Wahrscheinlichkeiten für das nächste Token.
 
-Ob dann eine Unsicherheitsantwort wie "Dazu habe ich nicht genug Informationen" erscheint, hängt stärker vom Gesamtsystem drumherum ab als vom LLM: etwa von Anweisungen, Feintuning, Sicherheitsregeln und der gewählten Generierungsstrategie. Das LLM selbst hingegen antwortet auf Grundlage seiner Trainingsdaten immer.
+Ob dann eine Unsicherheitsantwort wie *"Dazu habe ich nicht genug Informationen"* erscheint, hängt stärker vom Gesamtsystem drumherum ab als vom LLM: etwa von Anweisungen, Feintuning, Sicherheitsregeln und der gewählten Generierungsstrategie. Das LLM selbst hingegen antwortet auf Grundlage seiner Trainingsdaten immer.
 
 **Extrembeispiel**: Nehmen wir folgendes an:
 
@@ -40,7 +40,7 @@ Klare, präzise und gut strukturierte Prompts können dazu beitragen, dass das L
 
 Genauso kann aber auch ein zu enger Prompt zu einem spezifischen Thema dazu führen, dass das LLM versucht, eine Antwort zu generieren, die nicht durch die Trainingsdaten gedeckt ist. Wer in einem Bereich arbeitet, der mit Informationen und Fachwissen arbeitet, das nur gering öffentlich zugänglich ist und kein [RAG](./RAG.md)-System angebunden ist, wird feststellen, dass das LLM versucht, Wissen und Kenntnisse aus anderen ähnlichen Bereichen zu adaptieren und auf deren Grundlage eine Antwort zu generieren. Solche Antworten werden dann oft falsch oder zu ungenau sein. Auch das ist nichts anderes als eine Halluzination.
 
-Gefährlich sind auch Widersprüche zwischen LLM-, Entwickler- und Nutzeranweisungen, da sie zu inkonsistenten oder erfundenen Aussagen führen können. Das ist so, als wenn drei Vorgesetzte unterschiedliche Anweisungen zur Erledigung derselben Aufgabe geben. Der eine sagt: "Mach da einfach was, hauptsache da steht was." (z.B. Benutzer-Prompt), der andere sagt: "Mach es gründlich und fundiert. Das muss stimmen." (z.B. System-Prompt) und der Dritte sagt: "Hier, ich hab schon mal angefangen, darauf kannst du aufbauen." und darin ist alles falsch (z.B. schlechte Trainings-/RAG-Daten). Hier sind Halluzinationen vorprogrammiert, weil das LLM versucht, die widersprüchlichen Anweisungen zu erfüllen und dabei auf ungenaue oder falsche Informationen zurückgreift.
+Gefährlich sind auch Widersprüche zwischen LLM-, Entwickler- und Nutzeranweisungen, da sie zu inkonsistenten oder erfundenen Aussagen führen können. Das ist so, als wenn drei Vorgesetzte unterschiedliche Anweisungen zur Erledigung derselben Aufgabe geben. Der eine sagt: *"Mach da einfach was, hauptsache da steht was."* (z.B. Benutzer-Prompt), der andere sagt: *"Mach es gründlich und fundiert. Das muss stimmen."* (z.B. System-Prompt) und der Dritte sagt: *"Hier, ich hab schon mal angefangen, darauf kannst du aufbauen."* und darin ist alles falsch (z.B. schlechte Trainings-/RAG-Daten). Hier sind Halluzinationen vorprogrammiert, weil das LLM versucht, die widersprüchlichen Anweisungen zu erfüllen und dabei auf ungenaue oder falsche Informationen zurückgreift.
 
 ### Kontext und Hintergrundinformationen
 
@@ -50,7 +50,7 @@ Wenn das LLM über ausreichend passenden Kontext verfügt, um die Anfrage zu ver
 
 Ich nutze KI-Chatsysteme mittlerweile sehr häufig für alle möglichen Anfragen, beruflich wie privat. Ich möchte gar nicht wissen, wie oft ich schon angelogen wurde, die Information aber als korrekt wahrgenommen habe.
 
-Je weniger man selbst über ein Thema weiß, desto schwieriger ist es logischerweise eine Halluzination zu erkennen. Denn die Antwort wird sich in den meisten Fällen plausibel anhören und mit einer Begründung versehen sein. Wer sich aber in einem Fachgebiet auskennt, wird durch eigenes Wissen oder Ausprobieren schnell merken, dass das LLM eine falsche Antwort generiert hat. Und das ist mir schon öfter passiert.
+Je weniger man selbst über ein Thema weiß, desto schwieriger ist es logischerweise, eine Halluzination zu erkennen. Denn die Antwort wird sich in den meisten Fällen plausibel anhören und mit einer Begründung versehen sein. Wer sich aber in einem Fachgebiet auskennt, wird durch eigenes Wissen oder Ausprobieren schnell merken, dass das LLM eine falsche Antwort generiert hat. Und das ist mir schon öfter passiert.
 
 Auch tückisch ist, wenn das LLM, wie es Menschen auch tun, zwar korrekt auf eine Frage antwortet, wichtiges zusätzliches Wissen aber einfach weglässt, weil
 
