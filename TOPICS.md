@@ -14,6 +14,7 @@ Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](/README.md)** zusa
 
 ### Künstliche Intelligenz
 
+- Was ist: Jev (siehe [hier](https://typesafe.ai/blog/introducing-system-one-models-and-jev) und [hier](https://typesafe-ai-playground.vercel.app/doom))
 - Was ist: RAC
 - Was ist: Attention (Self Attention, Cross Attention, Multi Head Attention)
 - Was ist: Agentic Frontier
@@ -59,3 +60,4 @@ Meine Learnings zu einigen Themen sind im Ordner **[Was ist?](/README.md)** zusa
 ### DevOps / Automatisierung
 
 - Was ist: n8n Probe
+- Was ist: Smoke Test
